@@ -269,22 +269,22 @@ class ContactsVC: CFBaseVC, CreditItemSelectVCDelegate, ContactDetailVCDelegate 
             let context = UIGraphicsGetCurrentContext()
             
             // Set the stroke color
-            CGContextSetStrokeColorWithColor(context, strokeColor.CGColor)
+            CGContextSetStrokeColorWithColor(context!, strokeColor.CGColor)
             
             // Set the line width
-            CGContextSetLineWidth(context, CGFloat(strokeWidth))
+            CGContextSetLineWidth(context!, CGFloat(strokeWidth))
             
             // Set the fill color (if you are filling the circle)
-            CGContextSetFillColorWithColor(context, fillColor.CGColor)
+            CGContextSetFillColorWithColor(context!, fillColor.CGColor)
             
             startAngle = startAngle - Float(M_PI_2)
             endAngle = endAngle - Float(M_PI_2)
             
             // Draw the arc around the circle
-            CGContextAddArc(context, center.x, center.y, CGFloat(radius), CGFloat(startAngle), CGFloat(endAngle), 0)
+            CGContextAddArc(context!, center.x, center.y, CGFloat(radius), CGFloat(startAngle), CGFloat(endAngle), 0)
             
             // Draw the arc
-            CGContextDrawPath(context, .FillStroke)
+            CGContextDrawPath(context!, .FillStroke)
             
             self.circularImage = UIGraphicsGetImageFromCurrentImageContext()
             
@@ -311,7 +311,7 @@ class ContactsVC: CFBaseVC, CreditItemSelectVCDelegate, ContactDetailVCDelegate 
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(width, height), false, UIScreen.mainScreen().scale)
         let context = UIGraphicsGetCurrentContext()
         
-        CGContextDrawImage(context, CGRectMake(0, 0, width, height), self.circularImage?.CGImage)
+        CGContextDrawImage(context!, CGRectMake(0, 0, width, height), (self.circularImage?.CGImage)!)
         
         if(self.attributes == nil) {
             let textColor = UIColor.whiteColor()
