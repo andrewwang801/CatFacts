@@ -202,6 +202,29 @@ class CatFactsApi: NSObject {
         }
     }
     
+    static func reqConversationHistory(viewController:ViewController?, contact: PFObject?, block:ReturnBlockArray){
+        
+        if (CatFactsApi.isNetReachable() == true) {
+            
+            let _query = PFQuery(className: "Conversation")
+            _query.whereKey("contact", equalTo: contact!)
+            _query.orderByDescending("createdAt")
+            
+            SVProgressHUD.showWithMaskType(.Black)
+            _query.findObjectsInBackgroundWithBlock({ (objects, error) -> Void in
+                
+                SVProgressHUD.dismiss()
+                if (error == nil) {
+                    block(true, objects)
+                } else {
+                    let errorMessage = error?.localizedDescription
+                    CommData.showAlert(errorMessage, withTitle: "Loading conversation history failed", action: nil)
+                    block(false, nil)
+                }
+            })
+        }
+    }
+    
     static func reqTheContact(viewController:ViewController?, objectId:String?, block:ReturnBlockArray){
         
         if (CatFactsApi.isNetReachable() == true) {

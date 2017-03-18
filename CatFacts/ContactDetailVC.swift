@@ -30,6 +30,7 @@ class ContactDetailVC: UIViewController, CreditItemSelectVCDelegate, UITextField
     @IBOutlet weak var editContactImageView: UIImageView!
     @IBOutlet weak var editContactNameField: UITextField!
     @IBOutlet weak var editContactPhoneField: UITextField!
+    @IBOutlet weak var showHistoryButton: UIButton!
     let imagePicker = UIImagePickerController()
     var imageChanged:Bool = false
     weak var delegate:ContactDetailVCDelegate?
@@ -526,6 +527,27 @@ class ContactDetailVC: UIViewController, CreditItemSelectVCDelegate, UITextField
         }
     }
     
+    @IBAction func showHistory(sender: AnyObject) {
+        if let contactData = self.contactObj {
+            
+            //let credit = contactData["numberCredits"] as? Int ?? 0
+            
+            if let conversationHistoryVC =  self.storyboard?.instantiateViewControllerWithIdentifier("ConversationHistoryVC") as? ConversationHistoryVC {
+                self.navigationItem.title = "";
+                conversationHistoryVC.theContact = contactData
+//                creditItemSelectVC.activateAfterPurchase = false
+//                creditItemSelectVC.delegate = self
+                self.navigationController?.pushViewController(conversationHistoryVC, animated: true)
+            }
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.navigationItem.title = "Contact Detail"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -547,6 +569,7 @@ class ContactDetailVC: UIViewController, CreditItemSelectVCDelegate, UITextField
         self.editContentView.addGestureRecognizer(gestureRecognizer)
         
         self.buyMoreButton.layer.cornerRadius = 5.0;
+        self.showHistoryButton.layer.cornerRadius = 5.0;
         
         self.dropDownView.anchorView = self.dropDownActionButton
         self.dropDownView.direction = .Bottom
