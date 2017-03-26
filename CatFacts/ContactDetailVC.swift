@@ -528,16 +528,7 @@ class ContactDetailVC: UIViewController, CreditItemSelectVCDelegate, UITextField
     }
     
     @IBAction func showHistory(sender: AnyObject) {
-        if let contactData = self.contactObj {
-            
-            //let credit = contactData["numberCredits"] as? Int ?? 0
-            
-            if let conversationHistoryVC =  self.storyboard?.instantiateViewControllerWithIdentifier("ConversationHistoryVC") as? ConversationHistoryVC {
-                self.navigationItem.title = "";
-                conversationHistoryVC.theContact = contactData
-                self.navigationController?.pushViewController(conversationHistoryVC, animated: true)
-            }
-        }
+        loadConversationData()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -585,5 +576,47 @@ class ContactDetailVC: UIViewController, CreditItemSelectVCDelegate, UITextField
     }
     
     
-
+    func loadConversationData() {
+        var messages = [JSQMessage]()
+        CatFactsApi.reqConversationHistory(nil, contact: contactObj) { (succeed, aArrResult) -> Void in
+            if (succeed) {
+                if aArrResult?.count > 0 {
+                    for i in 0...aArrResult!.count - 1 {
+                        let conversationObj = aArrResult![i] as! PFObject
+                        var senderId = ""
+                        if conversationObj["isContactResponse"] as! Bool  == true {
+                            senderId = "Contact"
+                        } else {
+                            senderId = "Server"
+                        }
+                        
+                        let displayName = "Contact"
+                        let messageContent = conversationObj["message"] as! String
+                        let date = conversationObj.createdAt!
+                        let message = JSQMessage(senderId: senderId, senderDisplayName: displayName, date: date, text: messageContent)
+                        messages += [message]
+                    }
+                    self.openMessageView(messages)
+                } else {
+                    self.showNoMessageAlert()
+                }
+            }
+        }
+    }
+    
+    func openMessageView(messages: [JSQMessage]) {
+        if let contactData = self.contactObj {
+            if let conversationHistoryVC =  self.storyboard?.instantiateViewControllerWithIdentifier("ConversationHistoryVC") as? ConversationHistoryVC {
+                self.navigationItem.title = "";
+                conversationHistoryVC.theContact = contactData
+                conversationHistoryVC.messages = messages
+                self.navigationController?.pushViewController(conversationHistoryVC, animated: true)
+            }
+        }
+    }
+    
+    func showNoMessageAlert() {
+        let sendMailErrorAlert = UIAlertView(title: "", message: "No messages!", delegate: self, cancelButtonTitle: "OK")
+        sendMailErrorAlert.show()
+    }
 }
