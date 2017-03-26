@@ -616,7 +616,7 @@ class ContactDetailVC: UIViewController, CreditItemSelectVCDelegate, UITextField
     }
     
     func showNoMessageAlert() {
-        let sendMailErrorAlert = UIAlertView(title: "", message: "No messages!", delegate: self, cancelButtonTitle: "OK")
-        sendMailErrorAlert.show()
+        let messageErrorAlert = UIAlertView(title: "", message: "No messages!", delegate: self, cancelButtonTitle: "OK")
+        messageErrorAlert.show()
     }
 }
