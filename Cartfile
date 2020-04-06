@@ -1,0 +1,4 @@
+github "rs/SDWebImage"
+github "m1entus/MZFormSheetPresentationController" "master"
+github "marmelroy/PhoneNumberKit" ~> 2.6
+github "MessageKit/MessageKit" ~> 2.0.0

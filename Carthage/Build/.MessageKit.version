@@ -1,0 +1,10 @@
+{
+  "commitish" : "2.0.0",
+  "iOS" : [
+    {
+      "name" : "MessageKit",
+      "hash" : "4b0d48c39c6bccdfb5b7527c682535793603d3e83aa74b8880b19c481184c4c9",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ]
+}

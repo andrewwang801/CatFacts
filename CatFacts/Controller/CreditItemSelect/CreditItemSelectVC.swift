@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+//import SVProgressHUD
 
 protocol CreditItemSelectVCDelegate: class {
     func didPurchaseCredit()
@@ -17,7 +17,7 @@ class CreditItemSelectVC: UITableViewController {
 
     var contactIndex = 0
     var theContact:PFObject?
-    var activateAfterPurchase:Bool = false
+    var activateAfterPurchase: Bool = false
     weak var delegate:CreditItemSelectVCDelegate?
     
     override func viewDidLoad() {
@@ -30,7 +30,7 @@ class CreditItemSelectVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
-    override func viewWillAppear(animated:Bool){
+    override func viewWillAppear(_ animated:Bool){
         super.viewWillAppear(animated);
         self.navigationItem.title = "Purchase Credits"
     }
@@ -41,36 +41,36 @@ class CreditItemSelectVC: UITableViewController {
     }
 
     // MARK: - Table view data source
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         // Remove seperator inset
-        if cell.respondsToSelector("setSeparatorInset:") == true {
-            cell.separatorInset = UIEdgeInsetsZero
+        if cell.responds(to: #selector(setter: UITableViewCell.separatorInset)) == true {
+            cell.separatorInset = UIEdgeInsets.zero
         }
         
         // Prevent the cell from inheriting the Table View's margin settings
-        if cell.respondsToSelector("setPreservesSuperviewLayoutMargins:") == true {
+        if cell.responds(to: #selector(setter: UIView.preservesSuperviewLayoutMargins)) == true {
             cell.preservesSuperviewLayoutMargins = false
         }
 
         // Explictly set your cell's layout margins
-        if cell.respondsToSelector("setLayoutMargins:") == true {
-            cell.layoutMargins = UIEdgeInsetsZero
+        if cell.responds(to: #selector(setter: UIView.layoutMargins)) == true {
+            cell.layoutMargins = UIEdgeInsets.zero
         }
 
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return kCreditPurchaseItems.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CreditItemIdentifier", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CreditItemIdentifier", for: indexPath)
 
         let creditItem = kCreditPurchaseItems[indexPath.row]
         
@@ -81,22 +81,23 @@ class CreditItemSelectVC: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // Don't like to use storyboard segue.
         // Try Credit Purchase
         //guard let theContact = theContact else {return}
         let productId = kCreditPurchaseItems[indexPath.row]["productId"] as! String
-        purchaseCreditForContact(productId)
+        let _ = purchaseCreditForContact(productId)
     }
     
     // MARK:--In App Purchase--
     
-    func findPurchaseItemWithProductId(productId:String)->[String:AnyObject]? {
-        for var index = 0; index < kCreditPurchaseItems.count; index++ {
+    func findPurchaseItemWithProductId(_ productId:String)->[String:AnyObject]? {
+        for index in 0 ..< kCreditPurchaseItems.count {
             let purchaseCredit = kCreditPurchaseItems[index]
-            if purchaseCredit["productId"] == productId {
-                return purchaseCredit
+            let _productId = purchaseCredit["productId"] as? String ?? ""
+            if _productId == productId {
+                return purchaseCredit as [String : AnyObject]
             }
         }
         return nil
@@ -104,22 +105,22 @@ class CreditItemSelectVC: UITableViewController {
     
     func removeAllRemainingTransactions() {
         // take current payment queue
-        let currentQueue = SKPaymentQueue.defaultQueue()
+        let currentQueue = SKPaymentQueue.default()
         for transaction in currentQueue.transactions {
             currentQueue.finishTransaction(transaction)
         }
     }
     
-    func purchaseCreditForContact(productId:String) -> Bool {
+    func purchaseCreditForContact(_ productId:String) -> Bool {
         
-        SVProgressHUD.showWithMaskType(.Gradient)
+        SVProgressHUD.show(with: .gradient)
         SwiftyStoreKit.purchaseProduct(productId) { result in
             switch result {
-            case .Success( _):
+            case .success( _):
                 
                 guard
-                    let receiptURL = NSBundle.mainBundle().appStoreReceiptURL,
-                    let receipt = NSData(contentsOfURL: receiptURL),
+                    let receiptURL = Bundle.main.appStoreReceiptURL,
+                    let receipt = try? Data(contentsOf: receiptURL),
                     let contact = self.theContact,
                     let contactId = contact.objectId else {
                         
@@ -127,14 +128,14 @@ class CreditItemSelectVC: UITableViewController {
                         return
                 }
                 
-                let receipt64BaseCodeString = receipt.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue:0))
+                let receipt64BaseCodeString = receipt.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue:0))
                 //print(receipt64BaseCodeString)
                 
-                PFCloud.callFunctionInBackground("validatePurchase", withParameters: ["receipt": receipt64BaseCodeString, "contactId":contactId]) {
+                PFCloud.callFunction(inBackground: "validatePurchase", withParameters: ["receipt": receipt64BaseCodeString, "contactId":contactId]) {
                     (returnValue, error) in
                     if (error == nil) {
                         SVProgressHUD.dismiss();
-                        SVProgressHUD.showSuccessWithStatus("Buying an item completed successfully", maskType: .Black)
+                        SVProgressHUD.showSuccess(withStatus: "Buying an item completed successfully", maskType: .black)
                         
                         self.removeAllRemainingTransactions()
                         
@@ -142,32 +143,34 @@ class CreditItemSelectVC: UITableViewController {
                             
                             CatFactsApi.reqSetContactActive(contact, state: true, viewController: nil, block: { (succeed, aArrResult) -> Void in
                                 if (succeed == false) {
-                                    SVProgressHUD.showSuccessWithStatus("Contact activated")
+                                    SVProgressHUD.showSuccess(withStatus: "Contact activated")
                                 } else {
-                                    SVProgressHUD.showErrorWithStatus("Contact activation failed")
+                                    SVProgressHUD.showError(withStatus: "Contact activation failed")
                                 }
                                 
-                                contact.fetchIfNeededInBackgroundWithBlock { (result, error) -> Void in
+                                contact.fetchIfNeededInBackground { (result, error) -> Void in
                                     self.delegate?.didPurchaseCredit()
                                 }
-                                
-                                if let contactsVC = self.storyboard?.instantiateViewControllerWithIdentifier("ContactsVC") {
-                                    //self.navigationController?.setViewControllers([contactsVC], animated: true)
-                                    self.navigationController?.popViewControllerAnimated(true)
-                                    CommData.showAlertFromView(contactsVC, message: "Your messages will start being delivered in 15 minutes", withTitle: nil, action: nil)
+
+                                let viewControllers = self.navigationController!.viewControllers
+                                if viewControllers.count >= 2 {
+                                    let previousVC = viewControllers[viewControllers.count-2]
+                                    self.navigationController?.popViewController(animated: true)
+                                    CommData.showAlert(fromView: previousVC, message: "Your messages will start being delivered in 15 minutes", withTitle: nil, action: nil)
                                 }
                             })
                         }
                         else {
                             
-                            contact.fetchIfNeededInBackgroundWithBlock { (result, error) -> Void in
+                            contact.fetchIfNeededInBackground { (result, error) -> Void in
                                 self.delegate?.didPurchaseCredit()
                             }
-                            
-                            if let contactsVC = self.storyboard?.instantiateViewControllerWithIdentifier("ContactsVC") {
-                                //self.navigationController?.setViewControllers([contactsVC], animated: true)
-                                self.navigationController?.popViewControllerAnimated(true)
-                                CommData.showAlertFromView(contactsVC, message: "Your messages will start being delivered in 15 minutes", withTitle: nil, action: nil)
+
+                            let viewControllers = self.navigationController!.viewControllers
+                            if viewControllers.count >= 2 {
+                                let previousVC = viewControllers[viewControllers.count-2]
+                                self.navigationController?.popViewController(animated: true)
+                                CommData.showAlert(fromView: previousVC, message: "Your messages will start being delivered in 15 minutes", withTitle: nil, action: nil)
                             }
                         }
                     }
@@ -175,13 +178,13 @@ class CreditItemSelectVC: UITableViewController {
                         SVProgressHUD.dismiss();
                         
                         self.removeAllRemainingTransactions()
-                        SVProgressHUD.showErrorWithStatus("Buying an item failed", maskType: .Black)
+                        SVProgressHUD.showError(withStatus: "Buying an item failed", maskType: .black)
                     }
                 }
                 break
-            case .Error(_):
+            case .error(_):
                 SVProgressHUD.dismiss();
-                SVProgressHUD.showErrorWithStatus("Purchase failed", maskType: .Black)
+                SVProgressHUD.showError(withStatus: "Purchase failed", maskType: .black)
                 break
             }
         }

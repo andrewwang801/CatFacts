@@ -23,36 +23,36 @@ class SignInVC: CFBaseVC {
     func initUI() {
     }
 
-    override func viewWillAppear(animated:Bool) {
+    override func viewWillAppear(_ animated:Bool) {
         
         self.navigationItem.title = "Welcome"
     }
     
-    func validateEmail(email: String) -> Bool {
+    func validateEmail(_ email: String) -> Bool {
         
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        let result = emailTest.evaluateWithObject(email)
+        let result = emailTest.evaluate(with: email)
         
         return result
     }
     
-    func validatePasswd(passwd: String) -> Bool {
+    func validatePasswd(_ passwd: String) -> Bool {
         
         return passwd.characters.count != 0
     }
     
-    @IBAction func onClickSignin(sender: AnyObject) {
+    @IBAction func onClickSignin(_ sender: AnyObject) {
         
         var eb = self.validateEmail(self.txtEmail.text!)
         
         if (eb == false) {
             
-            let alert = UIAlertController(title: "Sorry", message: "Please enter correct Email address.", preferredStyle: .Alert)
-            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            let alert = UIAlertController(title: "Sorry", message: "Please enter correct Email address.", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alert.addAction(defaultAction)
             
-            self.presentViewController(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
             return
         }
         
@@ -60,18 +60,19 @@ class SignInVC: CFBaseVC {
         
         if (eb == false) {
             
-            let alert = UIAlertController(title: "Sorry", message: "Please enter correct password.", preferredStyle: .Alert)
-            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            let alert = UIAlertController(title: "Sorry", message: "Please enter correct password.", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alert.addAction(defaultAction)
             
-            self.presentViewController(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
             return
         }
         
-        CatFactsApi.reqSignin(["email":self.txtEmail.text!.lowercaseString, "password":self.txtPasswd.text!], viewController: nil) { (succeed, error) -> Void in
+        CatFactsApi.reqSignin(["email":self.txtEmail.text!.lowercased(), "password":self.txtPasswd.text!], viewController: nil) { (succeed, error) -> Void in
             
             if (succeed == true) {
-                if let delegate = UIApplication.sharedApplication().delegate as? AppDelegate {
+                Utils.setBoolSetting(key: kUUIDSignedUpKey, value: false)
+                if let delegate = UIApplication.shared.delegate as? AppDelegate {
                     delegate.gotoMain()
                 }
             }
@@ -79,36 +80,36 @@ class SignInVC: CFBaseVC {
 
     }
     
-    @IBAction func onClickSignup(sender: AnyObject) {
+    @IBAction func onClickSignup(_ sender: AnyObject) {
         
-        let _vcSignup = self.storyboard?.instantiateViewControllerWithIdentifier("SignUpVC")
+        let _vcSignup = self.storyboard?.instantiateViewController(withIdentifier: "SignUpVC")
         self.navigationController?.setViewControllers([_vcSignup!], animated: true)
     }
     
-    @IBAction func onClickForgotPasswd(sender: AnyObject) {
+    @IBAction func onClickForgotPasswd(_ sender: AnyObject) {
         
-        let _vcAlert = UIAlertController(title: "Reset Password", message: "Please enter your email address to reset your password.", preferredStyle: .Alert)
+        let _vcAlert = UIAlertController(title: "Reset Password", message: "Please enter your email address to reset your password.", preferredStyle: .alert)
         
-        _vcAlert.addTextFieldWithConfigurationHandler { (textField : UITextField!) -> Void in
+        _vcAlert.addTextField { (textField : UITextField!) -> Void in
             textField.placeholder = "Enter email address"
-            textField.keyboardType = .EmailAddress
+            textField.keyboardType = .emailAddress
         }
         
-        let okAction = UIAlertAction(title: "OK", style: .Default) { (action) -> Void in
+        let okAction = UIAlertAction(title: "OK", style: .default) { (action) -> Void in
             
             let txtField = _vcAlert.textFields?.first;
-            PFUser.requestPasswordResetForEmailInBackground(txtField!.text!);
+            PFUser.requestPasswordResetForEmail(inBackground: txtField!.text!);
             CommData.showAlert("Please check your Email inbox.", withTitle: "", action: nil)
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
         
         _vcAlert.addAction(okAction)
         _vcAlert.addAction(cancelAction)
-        self.presentViewController(_vcAlert, animated: true, completion: nil)
+        self.present(_vcAlert, animated: true, completion: nil)
     }
     
-    @IBAction func onLogoLink(sender: AnyObject) {
-        UIApplication.sharedApplication().openURL(NSURL(string:"http://www.catfactstexts.com/")!)
+    @IBAction func onLogoLink(_ sender: AnyObject) {
+        UIApplication.shared.openURL(URL(string:"http://www.catfactstexts.com/")!)
     }
 }
