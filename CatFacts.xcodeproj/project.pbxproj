@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F87DDCB243BBFA3000DCE1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F87DDCA243BBFA3000DCE1A /* GoogleService-Info.plist */; };
 		0FBEA34124324DCB00C65CA6 /* CountryCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBEA33F24324DCB00C65CA6 /* CountryCodeCell.swift */; };
 		0FBEA34224324DCB00C65CA6 /* CountryCodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FBEA34024324DCB00C65CA6 /* CountryCodeCell.xib */; };
 		0FE292EF242E931600BBDEBF /* TransferDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE292EE242E931600BBDEBF /* TransferDialog.swift */; };
@@ -35,7 +36,6 @@
 		647720BD2115FC3000E15237 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647720982115FC2F00E15237 /* Bolts.framework */; };
 		647720BE2115FC3000E15237 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647720992115FC2F00E15237 /* Parse.framework */; };
 		647720BF2115FC3000E15237 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6477209A2115FC2F00E15237 /* ParseCrashReporting.framework */; };
-		647720C02115FC3000E15237 /* R5Streaming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6477209B2115FC2F00E15237 /* R5Streaming.framework */; };
 		647720C12115FC3000E15237 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6477209D2115FC2F00E15237 /* SWRevealViewController.m */; };
 		647720C22115FC3000E15237 /* CommData.m in Sources */ = {isa = PBXBuildFile; fileRef = 647720A02115FC2F00E15237 /* CommData.m */; };
 		647720C32115FC3000E15237 /* CommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 647720A22115FC2F00E15237 /* CommonUtility.m */; };
@@ -104,6 +104,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F87DDC6243BB99C000DCE1A /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
+		0F87DDCA243BBFA3000DCE1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FBEA33F24324DCB00C65CA6 /* CountryCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCodeCell.swift; sourceTree = "<group>"; };
 		0FBEA34024324DCB00C65CA6 /* CountryCodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCodeCell.xib; sourceTree = "<group>"; };
 		0FE292EE242E931600BBDEBF /* TransferDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDialog.swift; sourceTree = "<group>"; };
@@ -229,7 +231,6 @@
 				838442521C32677100342EE2 /* libsqlite3.tbd in Frameworks */,
 				C96F2C952385B0F60032716D /* MessageInputBar.framework in Frameworks */,
 				647720BD2115FC3000E15237 /* Bolts.framework in Frameworks */,
-				647720C02115FC3000E15237 /* R5Streaming.framework in Frameworks */,
 				838442531C32677100342EE2 /* libstdc++.6.tbd in Frameworks */,
 				838442541C32677100342EE2 /* libz.tbd in Frameworks */,
 				838442471C32674500342EE2 /* AudioToolbox.framework in Frameworks */,
@@ -537,6 +538,7 @@
 				83F74B4F1C31501D0052CA6C /* Controller */,
 				647720862115FB3A00E15237 /* View */,
 				83F74B2C1C314F020052CA6C /* Info.plist */,
+				0F87DDCA243BBFA3000DCE1A /* GoogleService-Info.plist */,
 			);
 			path = CatFacts;
 			sourceTree = "<group>";
@@ -597,6 +599,7 @@
 		D9EFC69CA396840435F00835 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F87DDC6243BB99C000DCE1A /* libiconv.dylib */,
 				C96F2C942385B0F60032716D /* MessageInputBar.framework */,
 				64A6EF3422681B54001C2438 /* MessageKit.framework */,
 				649DEE8621E8BDAC00117949 /* libc++.tbd */,
@@ -740,6 +743,7 @@
 				0FBEA34224324DCB00C65CA6 /* CountryCodeCell.xib in Resources */,
 				64ADD0BD21EE747E00EA684C /* CatFactsHelp.rtf in Resources */,
 				6477208E2115FB3A00E15237 /* Main.storyboard in Resources */,
+				0F87DDCB243BBFA3000DCE1A /* GoogleService-Info.plist in Resources */,
 				642099E62113891F007B3D8D /* SVProgressHUD.bundle in Resources */,
 				6477208D2115FB3A00E15237 /* LaunchScreen.storyboard in Resources */,
 				648F17E82115F93C00B1C7C2 /* CatFactsPrivacyPolicy.rtf in Resources */,
@@ -796,12 +800,20 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CatFacts/Pods-CatFacts-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+				"${BUILT_PRODUCTS_DIR}/PhoneNumberKit/PhoneNumberKit.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -825,7 +837,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1069,7 +1081,7 @@
 				INFOPLIST_FILE = CatFacts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.13;
+				MARKETING_VERSION = 1.18;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mjm.catfacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1107,7 +1119,7 @@
 				INFOPLIST_FILE = CatFacts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.13;
+				MARKETING_VERSION = 1.18;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mjm.catfacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";

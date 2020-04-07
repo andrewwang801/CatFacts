@@ -27,6 +27,7 @@ class AddContactVC: CFBaseVC {
 
         // Do any additional setup after loading the view.
         setupDropDown()
+        setupDropDownEvent()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -44,17 +45,25 @@ class AddContactVC: CFBaseVC {
     // MARK Country code dropdown
     let dropDown = DropDown()
     
-    @IBAction func onCountryCode(_ sender: Any) {
+    func setupDropDownEvent() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onDropDown))
+        countryCodeView.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func onDropDown() {
         dropDown.show()
     }
     
     func setupDropDown() {
         dropDown.anchorView = countryCodeView
         dropDown.dataSource = kFlagValues
+        dropDown.width = 300
+        dropDown.bottomOffset = CGPoint(x: countryCodeView.bounds.origin.x, y: countryCodeView.bounds.height)
         dropDown.cellNib = UINib(nibName: "CountryCodeCell", bundle: nil)
         dropDown.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? CountryCodeCell else { return }
             cell.countryFlag.image = UIImage(named: "flag_" + kFlagSuffix[index])
+            cell.optionLabel!.text = kCountryName[index] + " " + kFlagValues[index]
         }
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             self.countryFlag.image = UIImage(named: "flag_" + kFlagSuffix[index])
@@ -116,8 +125,8 @@ class AddContactVC: CFBaseVC {
     }
     
     @IBAction func onClickAddContact(_ sender: AnyObject) {
-        
-        var eb = self.validatePhoneNumber(self.countryCodeLabel.text! + self.txtPhone.text!)
+        let phoneNumber = self.countryCodeLabel.text! + self.txtPhone.text!
+        var eb = Utils.isValidPhoneNumber(phoneNumber: phoneNumber)
         if (eb == false) {
             let alert = UIAlertController(title: "Sorry", message: "Please enter correct phone number.", preferredStyle: .alert)
             
@@ -141,7 +150,7 @@ class AddContactVC: CFBaseVC {
             return
         }
         
-        var _dicContact: [String: Any] = ["isActive":NSNumber(value: false as Bool), "name":self.txtName.text!, "phoneNumber":self.txtPhone.text!, "numberFactsSentPerDay":1]
+        var _dicContact: [String: Any] = ["isActive":NSNumber(value: false as Bool), "name":self.txtName.text!, "phoneNumber":phoneNumber, "numberFactsSentPerDay":1]
         
         if self.contactImage != nil {
             let image = self.contactImage!.fixOrientation()
@@ -418,14 +427,14 @@ extension AddContactVC: UITextFieldDelegate {
             }
         }*/
         
-        if length == 3 {
-            let num = formatNumber(textField.text!)
-            textField.text = "(\(num)) "
-            
-            if changedLength > 0 {
-                textField.text = "\((num as NSString).substring(to: 3))"
-            }
-        }
+//        if length == 3 {
+//            let num = formatNumber(textField.text!)
+//            textField.text = "(\(num)) "
+//
+//            if changedLength > 0 {
+//                textField.text = "\((num as NSString).substring(to: 3))"
+//            }
+//        }
         /*else if length == 6 {
             let num = formatNumber(textField.text!)
             textField.text = "(\((num as NSString).substring(to: 3))) \((num as NSString).substring(from: 3))-"

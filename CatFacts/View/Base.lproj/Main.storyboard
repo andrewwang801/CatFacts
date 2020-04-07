@@ -3,7 +3,7 @@
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -553,7 +553,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjT-GO-lGq">
-                                                        <rect key="frame" x="53" y="12" width="19" height="21"/>
+                                                        <rect key="frame" x="53" y="12" width="18.333333333333329" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -580,7 +580,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHg-cY-DRF" customClass="AnimatableButton" customModule="IBAnimatable">
-                                        <rect key="frame" x="15" y="268.66666666666669" width="384" height="45"/>
+                                        <rect key="frame" x="15" y="223" width="384" height="45"/>
                                         <color key="backgroundColor" red="0.1435752511" green="0.53667515519999998" blue="0.77776473759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="45a-ig-BxZ"/>
@@ -634,14 +634,8 @@ Enter your first contact to get started.</string>
                                             <outlet property="delegate" destination="p5D-Gg-GaV" id="4Fn-ar-phW"/>
                                         </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip: For international numbers, enter a + followed by the country code, followed by the number." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yd-T8-PPT">
-                                        <rect key="frame" x="18" y="132.66666666666666" width="378" height="31"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NZg-qm-8Xi" userLabel="Name" customClass="AnimatableImageView" customModule="IBAnimatable">
-                                        <rect key="frame" x="20" y="188.66666666666666" width="374" height="45"/>
+                                        <rect key="frame" x="20" y="143" width="374" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="XoG-wq-W3a"/>
@@ -661,7 +655,7 @@ Enter your first contact to get started.</string>
                                         </variation>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="udR-y3-sta">
-                                        <rect key="frame" x="40" y="188.66666666666666" width="334" height="45"/>
+                                        <rect key="frame" x="40" y="143" width="334" height="45"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
@@ -674,18 +668,6 @@ Enter your first contact to get started.</string>
                                             <outlet property="delegate" destination="p5D-Gg-GaV" id="4ic-Rv-Puz"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNH-D0-rN7">
-                                        <rect key="frame" x="125" y="95.666666666666671" width="10" height="10"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="10" id="Z6k-1j-0G8"/>
-                                            <constraint firstAttribute="height" constant="10" id="ZF9-dO-FJB"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" backgroundImage="down_arrow"/>
-                                        <connections>
-                                            <action selector="onCountryCode:" destination="p5D-Gg-GaV" eventType="touchUpInside" id="YoO-oC-1J3"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHt-N8-TJh">
                                         <rect key="frame" x="359" y="85.666666666666671" width="25" height="30"/>
                                         <constraints>
@@ -702,18 +684,15 @@ Enter your first contact to get started.</string>
                                     <constraint firstItem="udR-y3-sta" firstAttribute="trailing" secondItem="NZg-qm-8Xi" secondAttribute="trailing" constant="-20" id="1Pu-D2-b6z"/>
                                     <constraint firstItem="u0I-jp-RAt" firstAttribute="leading" secondItem="wFw-p5-zFZ" secondAttribute="leading" id="5pz-z3-VVh"/>
                                     <constraint firstItem="NZg-qm-8Xi" firstAttribute="centerX" secondItem="wFw-p5-zFZ" secondAttribute="centerX" id="CPc-fL-QTg"/>
-                                    <constraint firstItem="CJH-vY-eC4" firstAttribute="trailing" secondItem="LNH-D0-rN7" secondAttribute="trailing" constant="5" id="Ff1-Js-NUF"/>
                                     <constraint firstAttribute="trailing" secondItem="PHg-cY-DRF" secondAttribute="trailing" constant="15" id="Fly-xa-0x0"/>
                                     <constraint firstItem="9Z8-D5-2ic" firstAttribute="centerY" secondItem="EjL-Mp-na3" secondAttribute="centerY" id="Grn-uF-5HP"/>
-                                    <constraint firstItem="NZg-qm-8Xi" firstAttribute="top" secondItem="1yd-T8-PPT" secondAttribute="bottom" constant="25" id="J6v-6a-8Qs"/>
                                     <constraint firstItem="iHt-N8-TJh" firstAttribute="centerY" secondItem="EjL-Mp-na3" secondAttribute="centerY" id="K9f-gb-f4y"/>
                                     <constraint firstItem="NZg-qm-8Xi" firstAttribute="leading" secondItem="CJH-vY-eC4" secondAttribute="leading" id="KpI-jo-69J"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="Efw-Ok-51H" secondAttribute="trailing" constant="10" id="MUa-tr-l0G"/>
                                     <constraint firstItem="u0I-jp-RAt" firstAttribute="top" secondItem="wFw-p5-zFZ" secondAttribute="top" id="NZJ-Go-Sbj"/>
                                     <constraint firstItem="udR-y3-sta" firstAttribute="top" secondItem="NZg-qm-8Xi" secondAttribute="top" id="Nk5-B6-bhT"/>
-                                    <constraint firstItem="1yd-T8-PPT" firstAttribute="leading" secondItem="Efw-Ok-51H" secondAttribute="leading" id="OlN-Ez-FKK"/>
                                     <constraint firstItem="9Z8-D5-2ic" firstAttribute="height" secondItem="EjL-Mp-na3" secondAttribute="height" id="Om0-H5-7Az"/>
-                                    <constraint firstItem="1yd-T8-PPT" firstAttribute="trailing" secondItem="Efw-Ok-51H" secondAttribute="trailing" id="R0c-4p-5A1"/>
+                                    <constraint firstItem="udR-y3-sta" firstAttribute="top" secondItem="CJH-vY-eC4" secondAttribute="bottom" constant="20" id="Tnn-qP-y1j"/>
                                     <constraint firstAttribute="bottom" secondItem="u0I-jp-RAt" secondAttribute="bottom" id="Uz2-Aw-gOm"/>
                                     <constraint firstItem="PHg-cY-DRF" firstAttribute="leading" secondItem="wFw-p5-zFZ" secondAttribute="leading" constant="15" id="WMu-Te-RsI"/>
                                     <constraint firstItem="EjL-Mp-na3" firstAttribute="trailing" secondItem="iHt-N8-TJh" secondAttribute="trailing" constant="10" id="Zeg-LU-iTs"/>
@@ -723,14 +702,12 @@ Enter your first contact to get started.</string>
                                     <constraint firstItem="EjL-Mp-na3" firstAttribute="centerY" secondItem="CJH-vY-eC4" secondAttribute="centerY" id="dPY-Zd-HN9"/>
                                     <constraint firstItem="udR-y3-sta" firstAttribute="leading" secondItem="NZg-qm-8Xi" secondAttribute="leading" constant="20" id="f1v-zr-7IL"/>
                                     <constraint firstItem="Efw-Ok-51H" firstAttribute="centerX" secondItem="wFw-p5-zFZ" secondAttribute="centerX" id="fdR-va-1iS"/>
-                                    <constraint firstItem="1yd-T8-PPT" firstAttribute="top" secondItem="CJH-vY-eC4" secondAttribute="bottom" constant="9.6666666666666572" id="hMj-6V-0Wl"/>
                                     <constraint firstItem="9Z8-D5-2ic" firstAttribute="leading" secondItem="EjL-Mp-na3" secondAttribute="leading" constant="10" id="htL-ML-as8"/>
                                     <constraint firstItem="PHg-cY-DRF" firstAttribute="top" secondItem="NZg-qm-8Xi" secondAttribute="bottom" constant="35" id="k8z-Gj-tz4"/>
                                     <constraint firstItem="NZg-qm-8Xi" firstAttribute="trailing" secondItem="EjL-Mp-na3" secondAttribute="trailing" id="mdS-KG-oKs"/>
                                     <constraint firstItem="EjL-Mp-na3" firstAttribute="trailing" secondItem="9Z8-D5-2ic" secondAttribute="trailing" constant="40" id="pMp-ed-X4j"/>
                                     <constraint firstItem="CJH-vY-eC4" firstAttribute="top" secondItem="Efw-Ok-51H" secondAttribute="bottom" constant="27.666666666666657" id="pal-Sl-O7i"/>
                                     <constraint firstItem="Efw-Ok-51H" firstAttribute="leading" secondItem="wFw-p5-zFZ" secondAttribute="leadingMargin" constant="10" id="r4t-bp-lV1"/>
-                                    <constraint firstItem="LNH-D0-rN7" firstAttribute="centerY" secondItem="gjT-GO-lGq" secondAttribute="centerY" id="sV4-bZ-Oj2"/>
                                     <constraint firstItem="Efw-Ok-51H" firstAttribute="top" secondItem="wFw-p5-zFZ" secondAttribute="top" constant="17" id="xDc-1M-gAg"/>
                                     <constraint firstAttribute="trailing" secondItem="u0I-jp-RAt" secondAttribute="trailing" id="xem-zh-BwO"/>
                                 </constraints>
@@ -1244,40 +1221,10 @@ Enter your first contact to get started.</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZh-E9-QYz" userLabel="bottomBorder" customClass="AnimatableLabel" customModule="IBAnimatable">
-                                                <rect key="frame" x="76" y="281.33333333333337" width="72" height="1"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="aMc-Vq-TSY"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                        <color key="value" red="0.22359558939999999" green="0.61116588120000004" blue="0.86063879730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c9-4g-GZY" userLabel="bottomBorder" customClass="AnimatableLabel" customModule="IBAnimatable">
-                                                <rect key="frame" x="186" y="281.33333333333337" width="72" height="1"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="p1M-sP-Vp9"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="zfa-Nq-e2S" secondAttribute="trailing" constant="20" id="2K4-lQ-1J1"/>
-                                            <constraint firstItem="KZh-E9-QYz" firstAttribute="bottom" secondItem="1eX-QP-wo1" secondAttribute="bottom" id="56g-6I-2lz"/>
-                                            <constraint firstItem="9c9-4g-GZY" firstAttribute="centerX" secondItem="hv9-ip-MgZ" secondAttribute="centerX" id="6dK-E1-bVu"/>
                                             <constraint firstItem="vWD-yi-gNr" firstAttribute="centerX" secondItem="WFm-EE-WeZ" secondAttribute="centerX" id="7P9-y8-6v9"/>
                                             <constraint firstItem="2Rb-Tk-pVT" firstAttribute="bottom" secondItem="xGc-uD-eYM" secondAttribute="bottom" id="9vQ-Lp-D1O"/>
                                             <constraint firstItem="AWc-de-bGU" firstAttribute="centerY" secondItem="bEU-af-RWj" secondAttribute="centerY" id="9xr-sq-kjb"/>
@@ -1292,13 +1239,9 @@ Enter your first contact to get started.</string>
                                             <constraint firstItem="vWD-yi-gNr" firstAttribute="top" secondItem="iSP-dw-ls7" secondAttribute="bottom" constant="25" id="S4u-hd-a8O"/>
                                             <constraint firstItem="AWc-de-bGU" firstAttribute="leading" secondItem="bEU-af-RWj" secondAttribute="leading" constant="20" id="SsF-nF-drf"/>
                                             <constraint firstItem="iSP-dw-ls7" firstAttribute="top" secondItem="zfa-Nq-e2S" secondAttribute="bottom" constant="30" id="WN1-2p-OoM"/>
-                                            <constraint firstItem="9c9-4g-GZY" firstAttribute="bottom" secondItem="hv9-ip-MgZ" secondAttribute="bottom" id="aV3-8C-Ep8"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AWc-de-bGU" secondAttribute="trailing" constant="20" symbolic="YES" id="aya-Lh-mQs"/>
-                                            <constraint firstItem="KZh-E9-QYz" firstAttribute="centerX" secondItem="1eX-QP-wo1" secondAttribute="centerX" id="bs7-2T-9yM"/>
                                             <constraint firstItem="qFw-IB-Dj6" firstAttribute="top" secondItem="WFm-EE-WeZ" secondAttribute="top" constant="20" id="dvp-NF-4aF"/>
                                             <constraint firstItem="2Rb-Tk-pVT" firstAttribute="width" secondItem="xGc-uD-eYM" secondAttribute="width" multiplier="0.99" id="he5-up-F09"/>
-                                            <constraint firstItem="KZh-E9-QYz" firstAttribute="width" secondItem="1eX-QP-wo1" secondAttribute="width" multiplier="0.8" id="syN-v2-tNF"/>
-                                            <constraint firstItem="9c9-4g-GZY" firstAttribute="width" secondItem="hv9-ip-MgZ" secondAttribute="width" multiplier="0.8" id="tx5-Bx-EMG"/>
                                         </constraints>
                                     </view>
                                 </subviews>
