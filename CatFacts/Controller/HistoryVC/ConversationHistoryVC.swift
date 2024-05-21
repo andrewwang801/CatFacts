@@ -21,7 +21,6 @@ class ConversationHistoryVC: JSQMessagesViewController {
         
         self.navigationItem.title = "Conversation History";
         self.inputToolbar.hidden = true
-        self.loadConversationData()
     }
     
     override func collectionView(collectionView: JSQMessagesCollectionView, messageDataForItemAtIndexPath indexPath: NSIndexPath) -> JSQMessageData {
@@ -100,36 +99,6 @@ class ConversationHistoryVC: JSQMessagesViewController {
     private func setupIncomingBubble() -> JSQMessagesBubbleImage {
         let bubbleImageFactory = JSQMessagesBubbleImageFactory()
         return bubbleImageFactory.incomingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleLightGrayColor())
-    }
-    
-    func loadConversationData() {
-        CatFactsApi.reqConversationHistory(nil, contact: theContact) { (succeed, aArrResult) -> Void in
-            if (succeed) {
-                for i in 0...aArrResult!.count - 1 {
-                    let conversationObj = aArrResult![i] as! PFObject
-                    var senderId = ""
-                    if conversationObj["isContactResponse"] as! Bool  == true {
-                        senderId = "Contact"
-                    } else {
-                        senderId = "Server"
-                    }
-                    
-                    let displayName = "Contact"
-                    let messageContent = conversationObj["message"] as! String
-                    let date = conversationObj.createdAt!
-                    let message = JSQMessage(senderId: senderId, senderDisplayName: displayName, date: date, text: messageContent)
-                    self.messages += [message]
-                }
-                
-                self.reloadMessageView()
-            }
-        }
-    }
-    
-    func reloadMessageView() {
-        dispatch_async(dispatch_get_main_queue(), {
-            self.collectionView?.reloadData()
-        })
     }
     
     func contactImageWithContactInformation(name:String) -> UIImage? {
