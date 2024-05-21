@@ -9,6 +9,7 @@
 import UIKit
 import MessageKit
 import DropDown
+import PhoneNumberKit
 
 //import SVProgressHUD
 // FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
@@ -326,9 +327,8 @@ class ContactDetailVC: UIViewController {
             
             let contactName:String = contactData["name"] as? String ?? ""
             self.contactName.text = contactName
-            
             let phoneNumber:String = contactData["phoneNumber"] as? String ?? ""
-            self.contactPhone.text = phoneNumber
+            self.contactPhone.text = Utils.getE164Formatted(phoneNumber: phoneNumber)
             
             let imageFile = contactData["profilePicture"] as? PFFile
             if imageFile != nil {

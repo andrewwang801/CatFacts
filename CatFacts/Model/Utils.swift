@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PhoneNumberKit
 
 class Utils: NSObject {
 
@@ -85,6 +86,31 @@ class Utils: NSObject {
         let timeString = dateFormatter.string(from: date)
 
         return dateString + " " + timeString
+    }
+    
+    static func isValidPhoneNumber(phoneNumber: String) -> Bool {
+        let phoneNumberKit = PhoneNumberKit()
+        do {
+            _ = try phoneNumberKit.parse(phoneNumber)
+            return true
+        }
+        catch {
+            print("Generic parser error")
+            return false
+        }
+    }
+    
+    static func getE164Formatted(phoneNumber: String) -> String {
+        let phoneNumberKit = PhoneNumberKit()
+        do {
+                let phoneNumber = try phoneNumberKit.parse(phoneNumber)
+                let formattedPhoneNumber = phoneNumberKit.format(phoneNumber, toType: .e164)
+                return formattedPhoneNumber
+            }
+            catch {
+                print("Generic parser error")
+            }
+        return phoneNumber
     }
 
 }

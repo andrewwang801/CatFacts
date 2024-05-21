@@ -8,6 +8,7 @@
 
 import UIKit
 //import SVProgressHUD
+import Firebase
 
 @UIApplicationMain
 @objc class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -39,6 +40,7 @@ import UIKit
         UIApplication.shared.registerUserNotificationSettings(settings)
         UIApplication.shared.registerForRemoteNotifications()
         
+        FirebaseApp.configure()
         /*
         if let launchOptions = launchOptions as? [String : AnyObject] {
             if let notificationDictionary = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey] as? [NSObject : AnyObject] {
