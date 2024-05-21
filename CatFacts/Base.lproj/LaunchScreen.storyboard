@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="3nr-MT-XTW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="x2x-gr-TTr">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="3nr-MT-XTW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3o4-7E-PHV"/>
+                        <viewControllerLayoutGuide type="bottom" id="JC5-Oh-5vH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wqy-ML-Hp6" userLabel="Main View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9W-Vv-C09" userLabel="Scroll Contents">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYO-T8-2DB">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <color key="backgroundColor" red="0.2470588235" green="0.61568627450000002" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="NewLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bC4-tR-I1y" userLabel="Cat Facts">
+                                        <rect key="frame" x="74" y="79" width="172" height="138"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bC4-tR-I1y" secondAttribute="height" multiplier="1:1" id="9XS-0N-xfb"/>
+                                            <constraint firstAttribute="width" constant="172" id="Uh3-zC-i0V"/>
+                                            <constraint firstAttribute="height" constant="138" id="hNK-Tj-aLr"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="9XS-0N-xfb"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WB8-Jh-0Mo" userLabel="Logo Link">
+                                        <rect key="frame" x="109" y="213" width="116" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="116" id="YMS-aA-5NU"/>
+                                            <constraint firstAttribute="height" constant="22" id="ZPf-kK-B9K"/>
+                                        </constraints>
+                                        <state key="normal" image="LogoLink"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2470588235" green="0.61568627450000002" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.2470588235" green="0.61568627450000002" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="EYO-T8-2DB" firstAttribute="top" secondItem="m9W-Vv-C09" secondAttribute="top" id="7Kk-T9-RPM"/>
+                                    <constraint firstItem="bC4-tR-I1y" firstAttribute="centerX" secondItem="m9W-Vv-C09" secondAttribute="centerX" id="GaM-Ft-QbA"/>
+                                    <constraint firstItem="EYO-T8-2DB" firstAttribute="leading" secondItem="m9W-Vv-C09" secondAttribute="leading" id="KPc-cX-UUt"/>
+                                    <constraint firstItem="WB8-Jh-0Mo" firstAttribute="top" secondItem="bC4-tR-I1y" secondAttribute="bottom" constant="-4" id="WRg-l3-5xu"/>
+                                    <constraint firstItem="bC4-tR-I1y" firstAttribute="top" secondItem="m9W-Vv-C09" secondAttribute="top" priority="250" constant="79" id="aI6-wg-LdI"/>
+                                    <constraint firstAttribute="bottom" secondItem="EYO-T8-2DB" secondAttribute="bottom" id="eUl-A7-G3O"/>
+                                    <constraint firstItem="WB8-Jh-0Mo" firstAttribute="centerX" secondItem="m9W-Vv-C09" secondAttribute="centerX" constant="7" id="jal-D0-E2b"/>
+                                    <constraint firstAttribute="trailing" secondItem="EYO-T8-2DB" secondAttribute="trailing" id="ySV-dm-phX"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="m9W-Vv-C09" secondAttribute="trailing" id="1TW-0L-1Jk"/>
+                            <constraint firstItem="JC5-Oh-5vH" firstAttribute="top" secondItem="m9W-Vv-C09" secondAttribute="bottom" id="CZR-cb-3M8"/>
+                            <constraint firstItem="m9W-Vv-C09" firstAttribute="leading" secondItem="wqy-ML-Hp6" secondAttribute="leading" id="EId-45-bGQ"/>
+                            <constraint firstItem="EYO-T8-2DB" firstAttribute="height" secondItem="wqy-ML-Hp6" secondAttribute="height" id="Qxi-yV-jcd"/>
+                            <constraint firstItem="m9W-Vv-C09" firstAttribute="top" secondItem="3o4-7E-PHV" secondAttribute="bottom" id="gAq-AB-GIG"/>
+                            <constraint firstItem="EYO-T8-2DB" firstAttribute="width" secondItem="wqy-ML-Hp6" secondAttribute="width" id="r5F-es-iIn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="UOL-Bf-Xid"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Boe-o8-MI1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="311"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LogoLink" width="116" height="11"/>
+        <image name="NewLogo" width="172" height="138"/>
+    </resources>
+</document>
