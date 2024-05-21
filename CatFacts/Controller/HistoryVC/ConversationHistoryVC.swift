@@ -44,12 +44,12 @@ class ConversationHistoryVC: JSQMessagesViewController {
         let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath) as! JSQMessagesCollectionViewCell
         let contactName:String = theContact!["name"] as? String ?? ""
         let message = messages[indexPath.item]
-        if message.senderId == "Server" {
-            cell.textView?.textColor = UIColor.blackColor()
-            
-            cell.avatarImageView?.image = self.contactImageWithContactInformation("")
-        } else {
+        if message.senderId == "Contact" {
             cell.textView?.textColor = UIColor.whiteColor()
+            
+            cell.avatarImageView?.image = self.contactImageWithContactInformation("Cat Facts")
+        } else {
+            cell.textView?.textColor = UIColor.blackColor()
             
             let imageFile = theContact!["profilePicture"] as? PFFile
             
