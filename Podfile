@@ -1,10 +1,7 @@
-platform :ios, "8.0"
-
+source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-pod 'MZFormSheetPresentationController'
-pod 'SVProgressHUD'
-pod 'DateTools'
-pod 'SDWebImage'
-pod 'SwiftyStoreKit'
-https://cocoapods.org/pods/DropDown
+target 'CatFacts' do
+    pod 'IBAnimatable'
+	pod 'DropDown', '2.3.13'
+end

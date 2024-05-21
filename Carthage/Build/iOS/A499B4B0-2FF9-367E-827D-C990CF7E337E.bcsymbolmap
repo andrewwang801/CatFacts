@@ -1,0 +1,1894 @@
+BCSymbolMap Version: 2.0
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageGraphics.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage
+SDGraphicsGetImageFromCurrentImageContext
+SDGraphicsEndImageContext
+SDGraphicsBeginImageContextWithOptions
+SDGraphicsBeginImageContext
+SDGraphicsGetCurrentContext
++[SDImageFrame frameWithImage:duration:]
+-[SDImageFrame image]
+-[SDImageFrame setImage:]
+-[SDImageFrame duration]
+-[SDImageFrame setDuration:]
+-[SDImageFrame .cxx_destruct]
+_OBJC_IVAR_$_SDImageFrame._image
+_OBJC_IVAR_$_SDImageFrame._duration
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageFrame.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageFrame.h
+-[UIColor(HexString) sd_hexString]
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/Private/UIColor+HexString.m
+-[UIImage(ForceDecode) sd_isDecoded]
+-[UIImage(ForceDecode) setSd_isDecoded:]
++[UIImage(ForceDecode) sd_decodedImageWithImage:]
++[UIImage(ForceDecode) sd_decodedAndScaledDownImageWithImage:]
++[UIImage(ForceDecode) sd_decodedAndScaledDownImageWithImage:limitBytes:]
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/UIImage+ForceDecode.m
+-[SDWebImageCacheKeyFilter initWithBlock:]
++[SDWebImageCacheKeyFilter cacheKeyFilterWithBlock:]
+-[SDWebImageCacheKeyFilter cacheKeyForURL:]
+-[SDWebImageCacheKeyFilter block]
+-[SDWebImageCacheKeyFilter setBlock:]
+-[SDWebImageCacheKeyFilter .cxx_destruct]
+_OBJC_IVAR_$_SDWebImageCacheKeyFilter._block
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_SDWebImageCacheKeyFilter
+l_OBJC_LABEL_PROTOCOL_$_SDWebImageCacheKeyFilter
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageCacheKeyFilter.m
++[UIImage(GIF) sd_imageWithGIFData:]
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/UIImage+GIF.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/NSButton+WebCache.m
+-[UIImage(MemoryCacheCost) sd_memoryCost]
+-[UIImage(MemoryCacheCost) setSd_memoryCost:]
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/UIImage+MemoryCacheCost.m
+SDMemoryCacheCostForImage
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/Private/SDInternalMacros.m
+sd_executeCleanupBlock
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageError.m
++[SDImageCoderHelper animatedImageWithFrames:]
+___46+[SDImageCoderHelper animatedImageWithFrames:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
++[SDImageCoderHelper framesFromAnimatedImage:]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___46+[SDImageCoderHelper framesFromAnimatedImage:]_block_invoke
+___copy_helper_block_.27
+___destroy_helper_block_.28
++[SDImageCoderHelper colorSpaceGetDeviceRGB]
+___44+[SDImageCoderHelper colorSpaceGetDeviceRGB]_block_invoke
++[SDImageCoderHelper CGImageContainsAlpha:]
++[SDImageCoderHelper CGImageCreateDecoded:]
++[SDImageCoderHelper CGImageCreateDecoded:orientation:]
++[SDImageCoderHelper decodedImageWithImage:]
++[SDImageCoderHelper decodedAndScaledDownImageWithImage:limitBytes:]
++[SDImageCoderHelper imageOrientationFromEXIFOrientation:]
++[SDImageCoderHelper exifOrientationFromImageOrientation:]
++[SDImageCoderHelper shouldDecodeImage:]
++[SDImageCoderHelper shouldScaleDownImage:limitBytes:]
+___clang_at_available_requires_core_foundation_framework
+___block_descriptor_tmp
+___block_descriptor_tmp.30
+_colorSpaceGetDeviceRGB.colorSpace
+_colorSpaceGetDeviceRGB.onceToken
+___block_descriptor_tmp.32
+___block_literal_global
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageCoderHelper.m
+SDCGContextTransformFromOrientation
+__44+[SDImageCoderHelper colorSpaceGetDeviceRGB]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/dispatch/once.h
+__destroy_helper_block_
+__copy_helper_block_
+__46+[SDImageCoderHelper framesFromAnimatedImage:]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__46+[SDImageCoderHelper animatedImageWithFrames:]_block_invoke
+gcdArray
+gcd
+-[SDMemoryCache dealloc]
+-[SDMemoryCache init]
+-[SDMemoryCache initWithConfig:]
+-[SDMemoryCache commonInit]
+-[SDMemoryCache didReceiveMemoryWarning:]
+-[SDMemoryCache setObject:forKey:cost:]
+-[SDMemoryCache objectForKey:]
+-[SDMemoryCache removeObjectForKey:]
+-[SDMemoryCache removeAllObjects]
+-[SDMemoryCache observeValueForKeyPath:ofObject:change:context:]
+-[SDMemoryCache config]
+-[SDMemoryCache setConfig:]
+-[SDMemoryCache weakCache]
+-[SDMemoryCache setWeakCache:]
+-[SDMemoryCache weakCacheLock]
+-[SDMemoryCache setWeakCacheLock:]
+-[SDMemoryCache .cxx_destruct]
+_OBJC_IVAR_$_SDMemoryCache._config
+_SDMemoryCacheContext
+_OBJC_IVAR_$_SDMemoryCache._weakCache
+_OBJC_IVAR_$_SDMemoryCache._weakCacheLock
+l_OBJC_PROTOCOL_$_SDMemoryCache
+l_OBJC_LABEL_PROTOCOL_$_SDMemoryCache
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDMemoryCache.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDMemoryCache.h
++[SDImagePipelineTransformer transformerWithTransformers:]
++[SDImagePipelineTransformer cacheKeyForTransformers:]
+___54+[SDImagePipelineTransformer cacheKeyForTransformers:]_block_invoke
+-[SDImagePipelineTransformer transformedImageWithImage:forKey:]
+-[SDImagePipelineTransformer transformers]
+-[SDImagePipelineTransformer setTransformers:]
+-[SDImagePipelineTransformer transformerKey]
+-[SDImagePipelineTransformer setTransformerKey:]
+-[SDImagePipelineTransformer .cxx_destruct]
++[SDImageRoundCornerTransformer transformerWithRadius:corners:borderWidth:borderColor:]
+-[SDImageRoundCornerTransformer transformerKey]
+-[SDImageRoundCornerTransformer transformedImageWithImage:forKey:]
+-[SDImageRoundCornerTransformer cornerRadius]
+-[SDImageRoundCornerTransformer setCornerRadius:]
+-[SDImageRoundCornerTransformer corners]
+-[SDImageRoundCornerTransformer setCorners:]
+-[SDImageRoundCornerTransformer borderWidth]
+-[SDImageRoundCornerTransformer setBorderWidth:]
+-[SDImageRoundCornerTransformer borderColor]
+-[SDImageRoundCornerTransformer setBorderColor:]
+-[SDImageRoundCornerTransformer .cxx_destruct]
++[SDImageResizingTransformer transformerWithSize:scaleMode:]
+-[SDImageResizingTransformer transformerKey]
+-[SDImageResizingTransformer transformedImageWithImage:forKey:]
+-[SDImageResizingTransformer size]
+-[SDImageResizingTransformer setSize:]
+-[SDImageResizingTransformer scaleMode]
+-[SDImageResizingTransformer setScaleMode:]
++[SDImageCroppingTransformer transformerWithRect:]
+-[SDImageCroppingTransformer transformerKey]
+-[SDImageCroppingTransformer transformedImageWithImage:forKey:]
+-[SDImageCroppingTransformer rect]
+-[SDImageCroppingTransformer setRect:]
++[SDImageFlippingTransformer transformerWithHorizontal:vertical:]
+-[SDImageFlippingTransformer transformerKey]
+-[SDImageFlippingTransformer transformedImageWithImage:forKey:]
+-[SDImageFlippingTransformer horizontal]
+-[SDImageFlippingTransformer setHorizontal:]
+-[SDImageFlippingTransformer vertical]
+-[SDImageFlippingTransformer setVertical:]
++[SDImageRotationTransformer transformerWithAngle:fitSize:]
+-[SDImageRotationTransformer transformerKey]
+-[SDImageRotationTransformer transformedImageWithImage:forKey:]
+-[SDImageRotationTransformer angle]
+-[SDImageRotationTransformer setAngle:]
+-[SDImageRotationTransformer fitSize]
+-[SDImageRotationTransformer setFitSize:]
++[SDImageTintTransformer transformerWithColor:]
+-[SDImageTintTransformer transformerKey]
+-[SDImageTintTransformer transformedImageWithImage:forKey:]
+-[SDImageTintTransformer tintColor]
+-[SDImageTintTransformer setTintColor:]
+-[SDImageTintTransformer .cxx_destruct]
++[SDImageBlurTransformer transformerWithRadius:]
+-[SDImageBlurTransformer transformerKey]
+-[SDImageBlurTransformer transformedImageWithImage:forKey:]
+-[SDImageBlurTransformer blurRadius]
+-[SDImageBlurTransformer setBlurRadius:]
++[SDImageFilterTransformer transformerWithFilter:]
+-[SDImageFilterTransformer transformerKey]
+-[SDImageFilterTransformer transformedImageWithImage:forKey:]
+-[SDImageFilterTransformer filter]
+-[SDImageFilterTransformer setFilter:]
+-[SDImageFilterTransformer .cxx_destruct]
+_OBJC_IVAR_$_SDImagePipelineTransformer._transformers
+_OBJC_IVAR_$_SDImagePipelineTransformer._transformerKey
+l_OBJC_PROTOCOL_$_SDImageTransformer
+l_OBJC_LABEL_PROTOCOL_$_SDImageTransformer
+_OBJC_IVAR_$_SDImageRoundCornerTransformer._cornerRadius
+_OBJC_IVAR_$_SDImageRoundCornerTransformer._corners
+_OBJC_IVAR_$_SDImageRoundCornerTransformer._borderWidth
+_OBJC_IVAR_$_SDImageRoundCornerTransformer._borderColor
+_OBJC_IVAR_$_SDImageResizingTransformer._size
+_OBJC_IVAR_$_SDImageResizingTransformer._scaleMode
+_OBJC_IVAR_$_SDImageCroppingTransformer._rect
+_OBJC_IVAR_$_SDImageFlippingTransformer._horizontal
+_OBJC_IVAR_$_SDImageFlippingTransformer._vertical
+_OBJC_IVAR_$_SDImageRotationTransformer._angle
+_OBJC_IVAR_$_SDImageRotationTransformer._fitSize
+_OBJC_IVAR_$_SDImageTintTransformer._tintColor
+_OBJC_IVAR_$_SDImageBlurTransformer._blurRadius
+_OBJC_IVAR_$_SDImageFilterTransformer._filter
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageTransformer.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageTransformer.h
+__54+[SDImagePipelineTransformer cacheKeyForTransformers:]_block_invoke
+SDTransformedKeyForKey
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/NSImage+Compatibility.m
+-[SDWebImageActivityIndicator init]
+-[SDWebImageActivityIndicator commonInit]
+-[SDWebImageActivityIndicator startAnimatingIndicator]
+-[SDWebImageActivityIndicator stopAnimatingIndicator]
+-[SDWebImageActivityIndicator indicatorView]
+-[SDWebImageActivityIndicator setIndicatorView:]
+-[SDWebImageActivityIndicator .cxx_destruct]
++[SDWebImageActivityIndicator(Conveniences) grayIndicator]
++[SDWebImageActivityIndicator(Conveniences) grayLargeIndicator]
++[SDWebImageActivityIndicator(Conveniences) whiteIndicator]
++[SDWebImageActivityIndicator(Conveniences) whiteLargeIndicator]
+-[SDWebImageProgressIndicator init]
+-[SDWebImageProgressIndicator commonInit]
+-[SDWebImageProgressIndicator startAnimatingIndicator]
+-[SDWebImageProgressIndicator stopAnimatingIndicator]
+-[SDWebImageProgressIndicator updateIndicatorProgress:]
+-[SDWebImageProgressIndicator indicatorView]
+-[SDWebImageProgressIndicator setIndicatorView:]
+-[SDWebImageProgressIndicator .cxx_destruct]
++[SDWebImageProgressIndicator(Conveniences) defaultIndicator]
++[SDWebImageProgressIndicator(Conveniences) barIndicator]
+_OBJC_IVAR_$_SDWebImageActivityIndicator._indicatorView
+l_OBJC_PROTOCOL_$_SDWebImageIndicator
+l_OBJC_LABEL_PROTOCOL_$_SDWebImageIndicator
+_OBJC_IVAR_$_SDWebImageProgressIndicator._indicatorView
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageIndicator.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageIndicator.h
+-[SDAsyncBlockOperation initWithBlock:]
++[SDAsyncBlockOperation blockOperationWithBlock:]
+-[SDAsyncBlockOperation start]
+-[SDAsyncBlockOperation cancel]
+-[SDAsyncBlockOperation complete]
+-[SDAsyncBlockOperation isExecuting]
+-[SDAsyncBlockOperation setExecuting:]
+-[SDAsyncBlockOperation isFinished]
+-[SDAsyncBlockOperation setFinished:]
+-[SDAsyncBlockOperation executionBlock]
+-[SDAsyncBlockOperation setExecutionBlock:]
+-[SDAsyncBlockOperation .cxx_destruct]
+_OBJC_IVAR_$_SDAsyncBlockOperation._executing
+_OBJC_IVAR_$_SDAsyncBlockOperation._finished
+_OBJC_IVAR_$_SDAsyncBlockOperation._executionBlock
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/Private/SDAsyncBlockOperation.m
+-[SDWebImageDownloaderRequestModifier initWithBlock:]
++[SDWebImageDownloaderRequestModifier requestModifierWithBlock:]
+-[SDWebImageDownloaderRequestModifier modifiedRequestWithRequest:]
+-[SDWebImageDownloaderRequestModifier block]
+-[SDWebImageDownloaderRequestModifier setBlock:]
+-[SDWebImageDownloaderRequestModifier .cxx_destruct]
+_OBJC_IVAR_$_SDWebImageDownloaderRequestModifier._block
+l_OBJC_PROTOCOL_$_SDWebImageDownloaderRequestModifier
+l_OBJC_LABEL_PROTOCOL_$_SDWebImageDownloaderRequestModifier
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageDownloaderRequestModifier.m
++[SDImageLoadersManager sharedManager]
+___38+[SDImageLoadersManager sharedManager]_block_invoke
+-[SDImageLoadersManager init]
+-[SDImageLoadersManager loaders]
+-[SDImageLoadersManager setLoaders:]
+-[SDImageLoadersManager addLoader:]
+-[SDImageLoadersManager removeLoader:]
+-[SDImageLoadersManager canRequestImageForURL:]
+-[SDImageLoadersManager requestImageWithURL:options:context:progress:completed:]
+-[SDImageLoadersManager shouldBlockFailedURLWithURL:error:]
+-[SDImageLoadersManager loadersLock]
+-[SDImageLoadersManager setLoadersLock:]
+-[SDImageLoadersManager .cxx_destruct]
+_sharedManager.onceToken
+_sharedManager.manager
+_OBJC_IVAR_$_SDImageLoadersManager._imageLoaders
+_OBJC_IVAR_$_SDImageLoadersManager._loadersLock
+l_OBJC_PROTOCOL_$_SDImageLoader
+l_OBJC_LABEL_PROTOCOL_$_SDImageLoader
+l_OBJC_PROTOCOL_REFERENCE_$_SDImageLoader
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageLoadersManager.m
+__38+[SDImageLoadersManager sharedManager]_block_invoke
+-[UIImageView(WebCache) sd_setImageWithURL:]
+-[UIImageView(WebCache) sd_setImageWithURL:placeholderImage:]
+-[UIImageView(WebCache) sd_setImageWithURL:placeholderImage:options:]
+-[UIImageView(WebCache) sd_setImageWithURL:placeholderImage:options:context:]
+-[UIImageView(WebCache) sd_setImageWithURL:completed:]
+-[UIImageView(WebCache) sd_setImageWithURL:placeholderImage:completed:]
+-[UIImageView(WebCache) sd_setImageWithURL:placeholderImage:options:completed:]
+-[UIImageView(WebCache) sd_setImageWithURL:placeholderImage:options:progress:completed:]
+-[UIImageView(WebCache) sd_setImageWithURL:placeholderImage:options:context:progress:completed:]
+___96-[UIImageView(WebCache) sd_setImageWithURL:placeholderImage:options:context:progress:completed:]_block_invoke
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/UIImageView+WebCache.m
+__96-[UIImageView(WebCache) sd_setImageWithURL:placeholderImage:options:context:progress:completed:]_block_invoke
+-[SDWebImageDownloaderOperation init]
+-[SDWebImageDownloaderOperation initWithRequest:inSession:options:]
+-[SDWebImageDownloaderOperation initWithRequest:inSession:options:context:]
+-[SDWebImageDownloaderOperation addHandlersForProgress:completed:]
+-[SDWebImageDownloaderOperation callbacksForKey:]
+-[SDWebImageDownloaderOperation cancel:]
+-[SDWebImageDownloaderOperation start]
+___38-[SDWebImageDownloaderOperation start]_block_invoke
+___38-[SDWebImageDownloaderOperation start]_block_invoke.102
+___copy_helper_block_.108
+___destroy_helper_block_.109
+-[SDWebImageDownloaderOperation cancel]
+-[SDWebImageDownloaderOperation cancelInternal]
+___47-[SDWebImageDownloaderOperation cancelInternal]_block_invoke
+___copy_helper_block_.127
+___destroy_helper_block_.128
+-[SDWebImageDownloaderOperation done]
+-[SDWebImageDownloaderOperation reset]
+-[SDWebImageDownloaderOperation setFinished:]
+-[SDWebImageDownloaderOperation setExecuting:]
+-[SDWebImageDownloaderOperation isConcurrent]
+-[SDWebImageDownloaderOperation URLSession:dataTask:didReceiveResponse:completionHandler:]
+___90-[SDWebImageDownloaderOperation URLSession:dataTask:didReceiveResponse:completionHandler:]_block_invoke
+___copy_helper_block_.166
+___destroy_helper_block_.167
+-[SDWebImageDownloaderOperation URLSession:dataTask:didReceiveData:]
+___68-[SDWebImageDownloaderOperation URLSession:dataTask:didReceiveData:]_block_invoke
+___copy_helper_block_.204
+___destroy_helper_block_.205
+-[SDWebImageDownloaderOperation URLSession:dataTask:willCacheResponse:completionHandler:]
+-[SDWebImageDownloaderOperation URLSession:task:didCompleteWithError:]
+___70-[SDWebImageDownloaderOperation URLSession:task:didCompleteWithError:]_block_invoke
+___copy_helper_block_.207
+___destroy_helper_block_.208
+___70-[SDWebImageDownloaderOperation URLSession:task:didCompleteWithError:]_block_invoke.214
+___copy_helper_block_.219
+___destroy_helper_block_.220
+-[SDWebImageDownloaderOperation URLSession:task:didReceiveChallenge:completionHandler:]
++[SDWebImageDownloaderOperation imageOptionsFromDownloaderOptions:]
+-[SDWebImageDownloaderOperation shouldContinueWhenAppEntersBackground]
+-[SDWebImageDownloaderOperation callCompletionBlocksWithError:]
+-[SDWebImageDownloaderOperation callCompletionBlocksWithImage:imageData:error:finished:]
+___88-[SDWebImageDownloaderOperation callCompletionBlocksWithImage:imageData:error:finished:]_block_invoke
+___copy_helper_block_.239
+___destroy_helper_block_.240
+___88-[SDWebImageDownloaderOperation callCompletionBlocksWithImage:imageData:error:finished:]_block_invoke.242
+___copy_helper_block_.243
+___destroy_helper_block_.244
+-[SDWebImageDownloaderOperation isExecuting]
+-[SDWebImageDownloaderOperation isFinished]
+-[SDWebImageDownloaderOperation request]
+-[SDWebImageDownloaderOperation response]
+-[SDWebImageDownloaderOperation setResponse:]
+-[SDWebImageDownloaderOperation dataTask]
+-[SDWebImageDownloaderOperation setDataTask:]
+-[SDWebImageDownloaderOperation credential]
+-[SDWebImageDownloaderOperation setCredential:]
+-[SDWebImageDownloaderOperation minimumProgressInterval]
+-[SDWebImageDownloaderOperation setMinimumProgressInterval:]
+-[SDWebImageDownloaderOperation options]
+-[SDWebImageDownloaderOperation setOptions:]
+-[SDWebImageDownloaderOperation context]
+-[SDWebImageDownloaderOperation setContext:]
+-[SDWebImageDownloaderOperation callbackBlocks]
+-[SDWebImageDownloaderOperation setCallbackBlocks:]
+-[SDWebImageDownloaderOperation imageData]
+-[SDWebImageDownloaderOperation setImageData:]
+-[SDWebImageDownloaderOperation cachedData]
+-[SDWebImageDownloaderOperation setCachedData:]
+-[SDWebImageDownloaderOperation expectedSize]
+-[SDWebImageDownloaderOperation setExpectedSize:]
+-[SDWebImageDownloaderOperation receivedSize]
+-[SDWebImageDownloaderOperation setReceivedSize:]
+-[SDWebImageDownloaderOperation responseError]
+-[SDWebImageDownloaderOperation setResponseError:]
+-[SDWebImageDownloaderOperation previousProgress]
+-[SDWebImageDownloaderOperation setPreviousProgress:]
+-[SDWebImageDownloaderOperation unownedSession]
+-[SDWebImageDownloaderOperation setUnownedSession:]
+-[SDWebImageDownloaderOperation ownedSession]
+-[SDWebImageDownloaderOperation setOwnedSession:]
+-[SDWebImageDownloaderOperation callbacksLock]
+-[SDWebImageDownloaderOperation setCallbacksLock:]
+-[SDWebImageDownloaderOperation coderQueue]
+-[SDWebImageDownloaderOperation setCoderQueue:]
+-[SDWebImageDownloaderOperation backgroundTaskId]
+-[SDWebImageDownloaderOperation setBackgroundTaskId:]
+-[SDWebImageDownloaderOperation .cxx_destruct]
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._request
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._options
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._context
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._callbackBlocks
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._executing
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._finished
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._expectedSize
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._unownedSession
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._callbacksLock
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._coderQueue
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._backgroundTaskId
+___block_descriptor_tmp.110
+___block_descriptor_tmp.129
+___block_descriptor_tmp.168
+___block_descriptor_tmp.206
+___block_descriptor_tmp.209
+___block_descriptor_tmp.221
+___block_descriptor_tmp.241
+___block_descriptor_tmp.245
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._response
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._dataTask
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._credential
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._minimumProgressInterval
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._imageData
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._cachedData
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._receivedSize
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._responseError
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._previousProgress
+_OBJC_IVAR_$_SDWebImageDownloaderOperation._ownedSession
+l_OBJC_PROTOCOL_$_NSURLSessionDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLSessionDelegate
+l_OBJC_PROTOCOL_$_NSURLSessionTaskDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLSessionTaskDelegate
+l_OBJC_PROTOCOL_$_NSURLSessionDataDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLSessionDataDelegate
+l_OBJC_PROTOCOL_$_SDWebImageDownloaderOperation
+l_OBJC_LABEL_PROTOCOL_$_SDWebImageDownloaderOperation
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.h
+__88-[SDWebImageDownloaderOperation callCompletionBlocksWithImage:imageData:error:finished:]_block_invoke.242
+__88-[SDWebImageDownloaderOperation callCompletionBlocksWithImage:imageData:error:finished:]_block_invoke
+__70-[SDWebImageDownloaderOperation URLSession:task:didCompleteWithError:]_block_invoke.214
+__70-[SDWebImageDownloaderOperation URLSession:task:didCompleteWithError:]_block_invoke
+__68-[SDWebImageDownloaderOperation URLSession:dataTask:didReceiveData:]_block_invoke
+__90-[SDWebImageDownloaderOperation URLSession:dataTask:didReceiveResponse:completionHandler:]_block_invoke
+__47-[SDWebImageDownloaderOperation cancelInternal]_block_invoke
+__38-[SDWebImageDownloaderOperation start]_block_invoke.102
+__38-[SDWebImageDownloaderOperation start]_block_invoke
+-[UIImage(Transform) sd_drawInRect:withScaleMode:clipsToBounds:]
+-[UIImage(Transform) sd_resizedImageWithSize:scaleMode:]
+-[UIImage(Transform) sd_croppedImageWithRect:]
+-[UIImage(Transform) sd_roundedCornerImageWithRadius:corners:borderWidth:borderColor:]
+-[UIImage(Transform) sd_rotatedImageWithAngle:fitSize:]
+-[UIImage(Transform) sd_flippedImageWithHorizontal:vertical:]
+-[UIImage(Transform) sd_tintedImageWithColor:]
+-[UIImage(Transform) sd_colorAtPoint:]
+_SDGetColorFromPixel
+-[UIImage(Transform) sd_colorsWithRect:]
+-[UIImage(Transform) sd_blurredImageWithRadius:]
+-[UIImage(Transform) sd_filteredImageWithFilter:]
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/UIImage+Transform.m
+SDGetColorFromPixel
+CFRangeMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+SDCGRectFitWithScaleMode
+-[SDAPNGCoderFrame index]
+-[SDAPNGCoderFrame setIndex:]
+-[SDAPNGCoderFrame duration]
+-[SDAPNGCoderFrame setDuration:]
+-[SDImageAPNGCoder dealloc]
+-[SDImageAPNGCoder didReceiveMemoryWarning:]
++[SDImageAPNGCoder sharedCoder]
+___31+[SDImageAPNGCoder sharedCoder]_block_invoke
+-[SDImageAPNGCoder canDecodeFromData:]
+-[SDImageAPNGCoder decodedImageWithData:options:]
+-[SDImageAPNGCoder sd_imageLoopCountWithSource:]
+-[SDImageAPNGCoder sd_frameDurationAtIndex:source:]
+-[SDImageAPNGCoder canEncodeToFormat:]
+-[SDImageAPNGCoder encodedDataWithImage:format:options:]
+-[SDImageAPNGCoder canIncrementalDecodeFromData:]
+-[SDImageAPNGCoder initIncrementalWithOptions:]
+-[SDImageAPNGCoder updateIncrementalData:finished:]
+-[SDImageAPNGCoder incrementalDecodedImageWithOptions:]
+-[SDImageAPNGCoder initWithAnimatedImageData:options:]
+-[SDImageAPNGCoder scanAndCheckFramesValidWithImageSource:]
+-[SDImageAPNGCoder animatedImageData]
+-[SDImageAPNGCoder animatedImageLoopCount]
+-[SDImageAPNGCoder animatedImageFrameCount]
+-[SDImageAPNGCoder animatedImageDurationAtIndex:]
+-[SDImageAPNGCoder animatedImageFrameAtIndex:]
+-[SDImageAPNGCoder .cxx_destruct]
+_OBJC_IVAR_$_SDAPNGCoderFrame._index
+_OBJC_IVAR_$_SDAPNGCoderFrame._duration
+_OBJC_IVAR_$_SDImageAPNGCoder._imageSource
+_OBJC_IVAR_$_SDImageAPNGCoder._frameCount
+_sharedCoder.coder
+_sharedCoder.onceToken
+_OBJC_IVAR_$_SDImageAPNGCoder._scale
+_OBJC_IVAR_$_SDImageAPNGCoder._finished
+_OBJC_IVAR_$_SDImageAPNGCoder._imageData
+_OBJC_IVAR_$_SDImageAPNGCoder._width
+_OBJC_IVAR_$_SDImageAPNGCoder._height
+_OBJC_IVAR_$_SDImageAPNGCoder._loopCount
+_OBJC_IVAR_$_SDImageAPNGCoder._frames
+l_OBJC_PROTOCOL_$_SDImageCoder
+l_OBJC_LABEL_PROTOCOL_$_SDImageCoder
+l_OBJC_PROTOCOL_$_SDProgressiveImageCoder
+l_OBJC_LABEL_PROTOCOL_$_SDProgressiveImageCoder
+l_OBJC_PROTOCOL_$_SDAnimatedImageProvider
+l_OBJC_LABEL_PROTOCOL_$_SDAnimatedImageProvider
+l_OBJC_PROTOCOL_$_SDAnimatedImageCoder
+l_OBJC_LABEL_PROTOCOL_$_SDAnimatedImageCoder
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageAPNGCoder.m
+__31+[SDImageAPNGCoder sharedCoder]_block_invoke
+-[SDWebImageTransition init]
+-[SDWebImageTransition avoidAutoSetImage]
+-[SDWebImageTransition setAvoidAutoSetImage:]
+-[SDWebImageTransition duration]
+-[SDWebImageTransition setDuration:]
+-[SDWebImageTransition timingFunction]
+-[SDWebImageTransition setTimingFunction:]
+-[SDWebImageTransition animationOptions]
+-[SDWebImageTransition setAnimationOptions:]
+-[SDWebImageTransition prepares]
+-[SDWebImageTransition setPrepares:]
+-[SDWebImageTransition animations]
+-[SDWebImageTransition setAnimations:]
+-[SDWebImageTransition completion]
+-[SDWebImageTransition setCompletion:]
+-[SDWebImageTransition .cxx_destruct]
++[SDWebImageTransition(Conveniences) fadeTransition]
++[SDWebImageTransition(Conveniences) flipFromLeftTransition]
++[SDWebImageTransition(Conveniences) flipFromRightTransition]
++[SDWebImageTransition(Conveniences) flipFromTopTransition]
++[SDWebImageTransition(Conveniences) flipFromBottomTransition]
++[SDWebImageTransition(Conveniences) curlUpTransition]
++[SDWebImageTransition(Conveniences) curlDownTransition]
+_OBJC_IVAR_$_SDWebImageTransition._avoidAutoSetImage
+_OBJC_IVAR_$_SDWebImageTransition._duration
+_OBJC_IVAR_$_SDWebImageTransition._timingFunction
+_OBJC_IVAR_$_SDWebImageTransition._animationOptions
+_OBJC_IVAR_$_SDWebImageTransition._prepares
+_OBJC_IVAR_$_SDWebImageTransition._animations
+_OBJC_IVAR_$_SDWebImageTransition._completion
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageTransition.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageTransition.h
+-[SDImageIOCoder dealloc]
+-[SDImageIOCoder didReceiveMemoryWarning:]
++[SDImageIOCoder sharedCoder]
+___29+[SDImageIOCoder sharedCoder]_block_invoke
+-[SDImageIOCoder canDecodeFromData:]
+-[SDImageIOCoder decodedImageWithData:options:]
+-[SDImageIOCoder canIncrementalDecodeFromData:]
+-[SDImageIOCoder initIncrementalWithOptions:]
+-[SDImageIOCoder updateIncrementalData:finished:]
+-[SDImageIOCoder incrementalDecodedImageWithOptions:]
+-[SDImageIOCoder canEncodeToFormat:]
+-[SDImageIOCoder encodedDataWithImage:format:options:]
++[SDImageIOCoder canDecodeFromFormat:]
++[SDImageIOCoder canDecodeFromHEICFormat]
+___41+[SDImageIOCoder canDecodeFromHEICFormat]_block_invoke
++[SDImageIOCoder canDecodeFromHEIFFormat]
+___41+[SDImageIOCoder canDecodeFromHEIFFormat]_block_invoke
+___copy_helper_block_.75
+___destroy_helper_block_.76
++[SDImageIOCoder canEncodeToFormat:]
++[SDImageIOCoder canEncodeToHEICFormat]
+___39+[SDImageIOCoder canEncodeToHEICFormat]_block_invoke
+___copy_helper_block_.81
+___destroy_helper_block_.82
++[SDImageIOCoder canEncodeToHEIFFormat]
+___39+[SDImageIOCoder canEncodeToHEIFFormat]_block_invoke
+___copy_helper_block_.85
+___destroy_helper_block_.86
+_OBJC_IVAR_$_SDImageIOCoder._imageSource
+_OBJC_IVAR_$_SDImageIOCoder._scale
+_OBJC_IVAR_$_SDImageIOCoder._finished
+_OBJC_IVAR_$_SDImageIOCoder._width
+_OBJC_IVAR_$_SDImageIOCoder._height
+_OBJC_IVAR_$_SDImageIOCoder._orientation
+_canDecodeFromHEICFormat.canDecode
+_canDecodeFromHEICFormat.onceToken
+___block_descriptor_tmp.74
+_canDecodeFromHEIFFormat.canDecode
+_canDecodeFromHEIFFormat.onceToken
+___block_descriptor_tmp.78
+_canEncodeToHEICFormat.canEncode
+_canEncodeToHEICFormat.onceToken
+___block_descriptor_tmp.84
+_canEncodeToHEIFFormat.canEncode
+_canEncodeToHEIFFormat.onceToken
+___block_descriptor_tmp.88
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageIOCoder.m
+__39+[SDImageIOCoder canEncodeToHEIFFormat]_block_invoke
+__39+[SDImageIOCoder canEncodeToHEICFormat]_block_invoke
+__41+[SDImageIOCoder canDecodeFromHEIFFormat]_block_invoke
+__41+[SDImageIOCoder canDecodeFromHEICFormat]_block_invoke
+__29+[SDImageIOCoder sharedCoder]_block_invoke
++[SDWebImagePrefetcher sharedImagePrefetcher]
+___45+[SDWebImagePrefetcher sharedImagePrefetcher]_block_invoke
+-[SDWebImagePrefetcher init]
+-[SDWebImagePrefetcher initWithImageManager:]
+-[SDWebImagePrefetcher setMaxConcurrentPrefetchCount:]
+-[SDWebImagePrefetcher maxConcurrentPrefetchCount]
+-[SDWebImagePrefetcher prefetchURLs:]
+-[SDWebImagePrefetcher prefetchURLs:progress:completed:]
+-[SDWebImagePrefetcher startPrefetchWithToken:]
+___47-[SDWebImagePrefetcher startPrefetchWithToken:]_block_invoke
+___47-[SDWebImagePrefetcher startPrefetchWithToken:]_block_invoke_2
+___copy_helper_block_.64
+___destroy_helper_block_.65
+___copy_helper_block_.72
+___destroy_helper_block_.73
+-[SDWebImagePrefetcher cancelPrefetching]
+-[SDWebImagePrefetcher callProgressBlockForToken:imageURL:]
+___59-[SDWebImagePrefetcher callProgressBlockForToken:imageURL:]_block_invoke
+___copy_helper_block_.106
+___destroy_helper_block_.107
+-[SDWebImagePrefetcher callCompletionBlockForToken:]
+___52-[SDWebImagePrefetcher callCompletionBlockForToken:]_block_invoke
+___copy_helper_block_.117
+___destroy_helper_block_.118
+-[SDWebImagePrefetcher tokenTotalCount]
+-[SDWebImagePrefetcher tokenSkippedCount]
+-[SDWebImagePrefetcher tokenFinishedCount]
+-[SDWebImagePrefetcher addRunningToken:]
+-[SDWebImagePrefetcher removeRunningToken:]
+-[SDWebImagePrefetcher countOfRunningTokens]
+-[SDWebImagePrefetcher manager]
+-[SDWebImagePrefetcher setManager:]
+-[SDWebImagePrefetcher options]
+-[SDWebImagePrefetcher setOptions:]
+-[SDWebImagePrefetcher context]
+-[SDWebImagePrefetcher setContext:]
+-[SDWebImagePrefetcher delegateQueue]
+-[SDWebImagePrefetcher setDelegateQueue:]
+-[SDWebImagePrefetcher delegate]
+-[SDWebImagePrefetcher setDelegate:]
+-[SDWebImagePrefetcher runningTokens]
+-[SDWebImagePrefetcher setRunningTokens:]
+-[SDWebImagePrefetcher prefetchQueue]
+-[SDWebImagePrefetcher setPrefetchQueue:]
+-[SDWebImagePrefetcher .cxx_destruct]
+-[SDWebImagePrefetchToken cancel]
+-[SDWebImagePrefetchToken urls]
+-[SDWebImagePrefetchToken setUrls:]
+-[SDWebImagePrefetchToken loadOperations]
+-[SDWebImagePrefetchToken setLoadOperations:]
+-[SDWebImagePrefetchToken prefetchOperations]
+-[SDWebImagePrefetchToken setPrefetchOperations:]
+-[SDWebImagePrefetchToken prefetcher]
+-[SDWebImagePrefetchToken setPrefetcher:]
+-[SDWebImagePrefetchToken completionBlock]
+-[SDWebImagePrefetchToken setCompletionBlock:]
+-[SDWebImagePrefetchToken progressBlock]
+-[SDWebImagePrefetchToken setProgressBlock:]
+-[SDWebImagePrefetchToken .cxx_destruct]
+_sharedImagePrefetcher.once
+_sharedImagePrefetcher.instance
+_OBJC_IVAR_$_SDWebImagePrefetcher._manager
+_OBJC_IVAR_$_SDWebImagePrefetcher._runningTokens
+_OBJC_IVAR_$_SDWebImagePrefetcher._options
+_OBJC_IVAR_$_SDWebImagePrefetcher._delegateQueue
+_OBJC_IVAR_$_SDWebImagePrefetcher._prefetchQueue
+___block_descriptor_tmp.67
+___block_descriptor_tmp.75
+___block_descriptor_tmp.108
+___block_descriptor_tmp.119
+_OBJC_IVAR_$_SDWebImagePrefetcher._context
+_OBJC_IVAR_$_SDWebImagePrefetcher._delegate
+l_OBJC_PROTOCOL_$_SDWebImageOperation
+l_OBJC_LABEL_PROTOCOL_$_SDWebImageOperation
+l_OBJC_PROTOCOL_REFERENCE_$_SDWebImageOperation
+_OBJC_IVAR_$_SDWebImagePrefetchToken._urls
+_OBJC_IVAR_$_SDWebImagePrefetchToken._loadOperations
+_OBJC_IVAR_$_SDWebImagePrefetchToken._prefetchOperations
+_OBJC_IVAR_$_SDWebImagePrefetchToken._prefetcher
+_OBJC_IVAR_$_SDWebImagePrefetchToken._completionBlock
+_OBJC_IVAR_$_SDWebImagePrefetchToken._progressBlock
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImagePrefetcher.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImagePrefetcher.h
+__52-[SDWebImagePrefetcher callCompletionBlockForToken:]_block_invoke
+__59-[SDWebImagePrefetcher callProgressBlockForToken:imageURL:]_block_invoke
+__47-[SDWebImagePrefetcher startPrefetchWithToken:]_block_invoke_2
+__47-[SDWebImagePrefetcher startPrefetchWithToken:]_block_invoke
+__45+[SDWebImagePrefetcher sharedImagePrefetcher]_block_invoke
+-[SDDiskCache init]
+-[SDDiskCache initWithCachePath:config:]
+-[SDDiskCache commonInit]
+-[SDDiskCache containsDataForKey:]
+-[SDDiskCache dataForKey:]
+-[SDDiskCache setData:forKey:]
+-[SDDiskCache removeDataForKey:]
+-[SDDiskCache removeAllData]
+-[SDDiskCache removeExpiredData]
+___32-[SDDiskCache removeExpiredData]_block_invoke
+-[SDDiskCache cachePathForKey:]
+-[SDDiskCache totalSize]
+-[SDDiskCache totalCount]
+-[SDDiskCache cachePathForKey:inPath:]
+-[SDDiskCache moveCacheDirectoryFromPath:toPath:]
+-[SDDiskCache config]
+-[SDDiskCache diskCachePath]
+-[SDDiskCache setDiskCachePath:]
+-[SDDiskCache fileManager]
+-[SDDiskCache setFileManager:]
+-[SDDiskCache .cxx_destruct]
+_OBJC_IVAR_$_SDDiskCache._diskCachePath
+_OBJC_IVAR_$_SDDiskCache._config
+_OBJC_IVAR_$_SDDiskCache._fileManager
+l_OBJC_PROTOCOL_$_SDDiskCache
+l_OBJC_LABEL_PROTOCOL_$_SDDiskCache
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDDiskCache.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDDiskCache.h
+SDDiskCacheFileNameForKey
+__32-[SDDiskCache removeExpiredData]_block_invoke
+-[SDAnimatedImageView initWithImage:]
+-[SDAnimatedImageView initWithImage:highlightedImage:]
+-[SDAnimatedImageView initWithFrame:]
+-[SDAnimatedImageView initWithCoder:]
+-[SDAnimatedImageView commonInit]
+-[SDAnimatedImageView resetAnimatedImage]
+-[SDAnimatedImageView resetProgressiveImage]
+-[SDAnimatedImageView setImage:]
+-[SDAnimatedImageView setRunLoopMode:]
+-[SDAnimatedImageView fetchQueue]
+-[SDAnimatedImageView frameBuffer]
+-[SDAnimatedImageView displayLink]
+-[SDAnimatedImageView dealloc]
+-[SDAnimatedImageView didReceiveMemoryWarning:]
+___47-[SDAnimatedImageView didReceiveMemoryWarning:]_block_invoke
+-[SDAnimatedImageView didMoveToSuperview]
+-[SDAnimatedImageView didMoveToWindow]
+-[SDAnimatedImageView setAlpha:]
+-[SDAnimatedImageView setHidden:]
+-[SDAnimatedImageView startAnimating]
+-[SDAnimatedImageView stopAnimating]
+-[SDAnimatedImageView isAnimating]
+-[SDAnimatedImageView setHighlighted:]
+-[SDAnimatedImageView updateShouldAnimate]
+-[SDAnimatedImageView updateIsProgressiveWithImage:]
+-[SDAnimatedImageView displayDidRefresh:]
+___41-[SDAnimatedImageView displayDidRefresh:]_block_invoke
+___copy_helper_block_.281
+___destroy_helper_block_.282
++[SDAnimatedImageView defaultRunLoopMode]
+-[SDAnimatedImageView displayLayer:]
+-[SDAnimatedImageView calculateMaxBufferCount]
+-[SDAnimatedImageView currentFrame]
+-[SDAnimatedImageView setCurrentFrame:]
+-[SDAnimatedImageView currentFrameIndex]
+-[SDAnimatedImageView setCurrentFrameIndex:]
+-[SDAnimatedImageView currentLoopCount]
+-[SDAnimatedImageView setCurrentLoopCount:]
+-[SDAnimatedImageView shouldCustomLoopCount]
+-[SDAnimatedImageView setShouldCustomLoopCount:]
+-[SDAnimatedImageView maxBufferSize]
+-[SDAnimatedImageView setMaxBufferSize:]
+-[SDAnimatedImageView shouldIncrementalLoad]
+-[SDAnimatedImageView setShouldIncrementalLoad:]
+-[SDAnimatedImageView runLoopMode]
+-[SDAnimatedImageView totalFrameCount]
+-[SDAnimatedImageView setTotalFrameCount:]
+-[SDAnimatedImageView totalLoopCount]
+-[SDAnimatedImageView setTotalLoopCount:]
+-[SDAnimatedImageView animatedImage]
+-[SDAnimatedImageView setAnimatedImage:]
+-[SDAnimatedImageView setFrameBuffer:]
+-[SDAnimatedImageView currentTime]
+-[SDAnimatedImageView setCurrentTime:]
+-[SDAnimatedImageView bufferMiss]
+-[SDAnimatedImageView setBufferMiss:]
+-[SDAnimatedImageView shouldAnimate]
+-[SDAnimatedImageView setShouldAnimate:]
+-[SDAnimatedImageView isProgressive]
+-[SDAnimatedImageView setIsProgressive:]
+-[SDAnimatedImageView maxBufferCount]
+-[SDAnimatedImageView setMaxBufferCount:]
+-[SDAnimatedImageView setFetchQueue:]
+-[SDAnimatedImageView lock]
+-[SDAnimatedImageView setLock:]
+-[SDAnimatedImageView animatedImageScale]
+-[SDAnimatedImageView setAnimatedImageScale:]
+-[SDAnimatedImageView setDisplayLink:]
+-[SDAnimatedImageView .cxx_destruct]
+_OBJC_IVAR_$_SDAnimatedImageView._fetchQueue
+_OBJC_IVAR_$_SDAnimatedImageView._frameBuffer
+l_OBJC_PROTOCOL_$_SDAnimatedImage
+l_OBJC_LABEL_PROTOCOL_$_SDAnimatedImage
+l_OBJC_PROTOCOL_REFERENCE_$_SDAnimatedImage
+_OBJC_IVAR_$_SDAnimatedImageView._runLoopMode
+_OBJC_IVAR_$_SDAnimatedImageView._displayLink
+___block_descriptor_tmp.283
+_OBJC_IVAR_$_SDAnimatedImageView._currentFrame
+_OBJC_IVAR_$_SDAnimatedImageView._currentFrameIndex
+_OBJC_IVAR_$_SDAnimatedImageView._currentLoopCount
+_OBJC_IVAR_$_SDAnimatedImageView._shouldCustomLoopCount
+_OBJC_IVAR_$_SDAnimatedImageView._maxBufferSize
+_OBJC_IVAR_$_SDAnimatedImageView._shouldIncrementalLoad
+_OBJC_IVAR_$_SDAnimatedImageView._totalFrameCount
+_OBJC_IVAR_$_SDAnimatedImageView._totalLoopCount
+_OBJC_IVAR_$_SDAnimatedImageView._animatedImage
+_OBJC_IVAR_$_SDAnimatedImageView._currentTime
+_OBJC_IVAR_$_SDAnimatedImageView._bufferMiss
+_OBJC_IVAR_$_SDAnimatedImageView._shouldAnimate
+_OBJC_IVAR_$_SDAnimatedImageView._isProgressive
+_OBJC_IVAR_$_SDAnimatedImageView._maxBufferCount
+_OBJC_IVAR_$_SDAnimatedImageView._lock
+_OBJC_IVAR_$_SDAnimatedImageView._animatedImageScale
+l_OBJC_PROTOCOL_$_CALayerDelegate
+l_OBJC_LABEL_PROTOCOL_$_CALayerDelegate
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDAnimatedImageView.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDAnimatedImageView.h
+SDDeviceFreeMemory
+SDDeviceTotalMemory
+__41-[SDAnimatedImageView displayDidRefresh:]_block_invoke
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+__47-[SDAnimatedImageView didReceiveMemoryWarning:]_block_invoke
++[SDImageCachesManager sharedManager]
+___37+[SDImageCachesManager sharedManager]_block_invoke
+-[SDImageCachesManager init]
+-[SDImageCachesManager caches]
+-[SDImageCachesManager setCaches:]
+-[SDImageCachesManager addCache:]
+-[SDImageCachesManager removeCache:]
+-[SDImageCachesManager queryImageForKey:options:context:completion:]
+-[SDImageCachesManager storeImage:imageData:forKey:cacheType:completion:]
+-[SDImageCachesManager removeImageForKey:cacheType:completion:]
+-[SDImageCachesManager containsImageForKey:cacheType:completion:]
+-[SDImageCachesManager clearWithCacheType:completion:]
+-[SDImageCachesManager concurrentQueryImageForKey:options:context:completion:enumerator:operation:]
+___99-[SDImageCachesManager concurrentQueryImageForKey:options:context:completion:enumerator:operation:]_block_invoke
+-[SDImageCachesManager concurrentStoreImage:imageData:forKey:cacheType:completion:enumerator:operation:]
+___104-[SDImageCachesManager concurrentStoreImage:imageData:forKey:cacheType:completion:enumerator:operation:]_block_invoke
+___copy_helper_block_.148
+___destroy_helper_block_.149
+-[SDImageCachesManager concurrentRemoveImageForKey:cacheType:completion:enumerator:operation:]
+___94-[SDImageCachesManager concurrentRemoveImageForKey:cacheType:completion:enumerator:operation:]_block_invoke
+___copy_helper_block_.151
+___destroy_helper_block_.152
+-[SDImageCachesManager concurrentContainsImageForKey:cacheType:completion:enumerator:operation:]
+___96-[SDImageCachesManager concurrentContainsImageForKey:cacheType:completion:enumerator:operation:]_block_invoke
+___copy_helper_block_.154
+___destroy_helper_block_.155
+-[SDImageCachesManager concurrentClearWithCacheType:completion:enumerator:operation:]
+___85-[SDImageCachesManager concurrentClearWithCacheType:completion:enumerator:operation:]_block_invoke
+___copy_helper_block_.158
+___destroy_helper_block_.159
+-[SDImageCachesManager serialQueryImageForKey:options:context:completion:enumerator:operation:]
+___95-[SDImageCachesManager serialQueryImageForKey:options:context:completion:enumerator:operation:]_block_invoke
+___copy_helper_block_.163
+___destroy_helper_block_.164
+-[SDImageCachesManager serialStoreImage:imageData:forKey:cacheType:completion:enumerator:]
+___90-[SDImageCachesManager serialStoreImage:imageData:forKey:cacheType:completion:enumerator:]_block_invoke
+-[SDImageCachesManager serialRemoveImageForKey:cacheType:completion:enumerator:]
+___80-[SDImageCachesManager serialRemoveImageForKey:cacheType:completion:enumerator:]_block_invoke
+___copy_helper_block_.169
+___destroy_helper_block_.170
+-[SDImageCachesManager serialContainsImageForKey:cacheType:completion:enumerator:operation:]
+___92-[SDImageCachesManager serialContainsImageForKey:cacheType:completion:enumerator:operation:]_block_invoke
+___copy_helper_block_.172
+___destroy_helper_block_.173
+-[SDImageCachesManager serialClearWithCacheType:completion:enumerator:]
+___71-[SDImageCachesManager serialClearWithCacheType:completion:enumerator:]_block_invoke
+___copy_helper_block_.175
+___destroy_helper_block_.176
+-[SDImageCachesManager queryOperationPolicy]
+-[SDImageCachesManager setQueryOperationPolicy:]
+-[SDImageCachesManager storeOperationPolicy]
+-[SDImageCachesManager setStoreOperationPolicy:]
+-[SDImageCachesManager removeOperationPolicy]
+-[SDImageCachesManager setRemoveOperationPolicy:]
+-[SDImageCachesManager containsOperationPolicy]
+-[SDImageCachesManager setContainsOperationPolicy:]
+-[SDImageCachesManager clearOperationPolicy]
+-[SDImageCachesManager setClearOperationPolicy:]
+-[SDImageCachesManager cachesLock]
+-[SDImageCachesManager setCachesLock:]
+-[SDImageCachesManager .cxx_destruct]
+_OBJC_IVAR_$_SDImageCachesManager._imageCaches
+_OBJC_IVAR_$_SDImageCachesManager._cachesLock
+l_OBJC_PROTOCOL_$_SDImageCache
+l_OBJC_LABEL_PROTOCOL_$_SDImageCache
+l_OBJC_PROTOCOL_REFERENCE_$_SDImageCache
+___block_descriptor_tmp.147
+___block_descriptor_tmp.150
+___block_descriptor_tmp.153
+___block_descriptor_tmp.157
+___block_descriptor_tmp.160
+___block_descriptor_tmp.165
+___block_descriptor_tmp.171
+___block_descriptor_tmp.174
+___block_descriptor_tmp.177
+_OBJC_IVAR_$_SDImageCachesManager._queryOperationPolicy
+_OBJC_IVAR_$_SDImageCachesManager._storeOperationPolicy
+_OBJC_IVAR_$_SDImageCachesManager._removeOperationPolicy
+_OBJC_IVAR_$_SDImageCachesManager._containsOperationPolicy
+_OBJC_IVAR_$_SDImageCachesManager._clearOperationPolicy
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageCachesManager.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageCachesManager.h
+__71-[SDImageCachesManager serialClearWithCacheType:completion:enumerator:]_block_invoke
+__92-[SDImageCachesManager serialContainsImageForKey:cacheType:completion:enumerator:operation:]_block_invoke
+__80-[SDImageCachesManager serialRemoveImageForKey:cacheType:completion:enumerator:]_block_invoke
+__90-[SDImageCachesManager serialStoreImage:imageData:forKey:cacheType:completion:enumerator:]_block_invoke
+__95-[SDImageCachesManager serialQueryImageForKey:options:context:completion:enumerator:operation:]_block_invoke
+__85-[SDImageCachesManager concurrentClearWithCacheType:completion:enumerator:operation:]_block_invoke
+__96-[SDImageCachesManager concurrentContainsImageForKey:cacheType:completion:enumerator:operation:]_block_invoke
+__94-[SDImageCachesManager concurrentRemoveImageForKey:cacheType:completion:enumerator:operation:]_block_invoke
+__104-[SDImageCachesManager concurrentStoreImage:imageData:forKey:cacheType:completion:enumerator:operation:]_block_invoke
+__99-[SDImageCachesManager concurrentQueryImageForKey:options:context:completion:enumerator:operation:]_block_invoke
+__37+[SDImageCachesManager sharedManager]_block_invoke
++[SDWebImageDownloaderConfig defaultDownloaderConfig]
+___53+[SDWebImageDownloaderConfig defaultDownloaderConfig]_block_invoke
+-[SDWebImageDownloaderConfig init]
+-[SDWebImageDownloaderConfig copyWithZone:]
+-[SDWebImageDownloaderConfig maxConcurrentDownloads]
+-[SDWebImageDownloaderConfig setMaxConcurrentDownloads:]
+-[SDWebImageDownloaderConfig downloadTimeout]
+-[SDWebImageDownloaderConfig setDownloadTimeout:]
+-[SDWebImageDownloaderConfig minimumProgressInterval]
+-[SDWebImageDownloaderConfig setMinimumProgressInterval:]
+-[SDWebImageDownloaderConfig sessionConfiguration]
+-[SDWebImageDownloaderConfig setSessionConfiguration:]
+-[SDWebImageDownloaderConfig operationClass]
+-[SDWebImageDownloaderConfig setOperationClass:]
+-[SDWebImageDownloaderConfig executionOrder]
+-[SDWebImageDownloaderConfig setExecutionOrder:]
+-[SDWebImageDownloaderConfig urlCredential]
+-[SDWebImageDownloaderConfig setUrlCredential:]
+-[SDWebImageDownloaderConfig username]
+-[SDWebImageDownloaderConfig setUsername:]
+-[SDWebImageDownloaderConfig password]
+-[SDWebImageDownloaderConfig setPassword:]
+-[SDWebImageDownloaderConfig .cxx_destruct]
+_defaultDownloaderConfig.onceToken
+__defaultDownloaderConfig
+_OBJC_IVAR_$_SDWebImageDownloaderConfig._maxConcurrentDownloads
+_OBJC_IVAR_$_SDWebImageDownloaderConfig._downloadTimeout
+_OBJC_IVAR_$_SDWebImageDownloaderConfig._executionOrder
+_OBJC_IVAR_$_SDWebImageDownloaderConfig._minimumProgressInterval
+_OBJC_IVAR_$_SDWebImageDownloaderConfig._sessionConfiguration
+_OBJC_IVAR_$_SDWebImageDownloaderConfig._operationClass
+_OBJC_IVAR_$_SDWebImageDownloaderConfig._urlCredential
+_OBJC_IVAR_$_SDWebImageDownloaderConfig._username
+_OBJC_IVAR_$_SDWebImageDownloaderConfig._password
+l_OBJC_PROTOCOL_$_NSCopying
+l_OBJC_LABEL_PROTOCOL_$_NSCopying
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageDownloaderConfig.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageDownloaderConfig.h
+__53+[SDWebImageDownloaderConfig defaultDownloaderConfig]_block_invoke
++[SDImageCacheConfig defaultCacheConfig]
+___40+[SDImageCacheConfig defaultCacheConfig]_block_invoke
+-[SDImageCacheConfig init]
+-[SDImageCacheConfig copyWithZone:]
+-[SDImageCacheConfig shouldDisableiCloud]
+-[SDImageCacheConfig setShouldDisableiCloud:]
+-[SDImageCacheConfig shouldCacheImagesInMemory]
+-[SDImageCacheConfig setShouldCacheImagesInMemory:]
+-[SDImageCacheConfig shouldUseWeakMemoryCache]
+-[SDImageCacheConfig setShouldUseWeakMemoryCache:]
+-[SDImageCacheConfig shouldRemoveExpiredDataWhenEnterBackground]
+-[SDImageCacheConfig setShouldRemoveExpiredDataWhenEnterBackground:]
+-[SDImageCacheConfig diskCacheReadingOptions]
+-[SDImageCacheConfig setDiskCacheReadingOptions:]
+-[SDImageCacheConfig diskCacheWritingOptions]
+-[SDImageCacheConfig setDiskCacheWritingOptions:]
+-[SDImageCacheConfig maxDiskAge]
+-[SDImageCacheConfig setMaxDiskAge:]
+-[SDImageCacheConfig maxDiskSize]
+-[SDImageCacheConfig setMaxDiskSize:]
+-[SDImageCacheConfig maxMemoryCost]
+-[SDImageCacheConfig setMaxMemoryCost:]
+-[SDImageCacheConfig maxMemoryCount]
+-[SDImageCacheConfig setMaxMemoryCount:]
+-[SDImageCacheConfig diskCacheExpireType]
+-[SDImageCacheConfig setDiskCacheExpireType:]
+-[SDImageCacheConfig fileManager]
+-[SDImageCacheConfig setFileManager:]
+-[SDImageCacheConfig memoryCacheClass]
+-[SDImageCacheConfig setMemoryCacheClass:]
+-[SDImageCacheConfig diskCacheClass]
+-[SDImageCacheConfig setDiskCacheClass:]
+-[SDImageCacheConfig .cxx_destruct]
+_defaultCacheConfig.onceToken
+__defaultCacheConfig
+_OBJC_IVAR_$_SDImageCacheConfig._shouldDisableiCloud
+_OBJC_IVAR_$_SDImageCacheConfig._shouldCacheImagesInMemory
+_OBJC_IVAR_$_SDImageCacheConfig._shouldUseWeakMemoryCache
+_OBJC_IVAR_$_SDImageCacheConfig._shouldRemoveExpiredDataWhenEnterBackground
+_OBJC_IVAR_$_SDImageCacheConfig._diskCacheReadingOptions
+_OBJC_IVAR_$_SDImageCacheConfig._diskCacheWritingOptions
+_OBJC_IVAR_$_SDImageCacheConfig._maxDiskAge
+_OBJC_IVAR_$_SDImageCacheConfig._maxDiskSize
+_OBJC_IVAR_$_SDImageCacheConfig._diskCacheExpireType
+_OBJC_IVAR_$_SDImageCacheConfig._memoryCacheClass
+_OBJC_IVAR_$_SDImageCacheConfig._diskCacheClass
+_OBJC_IVAR_$_SDImageCacheConfig._maxMemoryCost
+_OBJC_IVAR_$_SDImageCacheConfig._maxMemoryCount
+_OBJC_IVAR_$_SDImageCacheConfig._fileManager
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageCacheConfig.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageCacheConfig.h
+__40+[SDImageCacheConfig defaultCacheConfig]_block_invoke
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/Private/NSBezierPath+RoundedCorners.m
+-[SDAnimatedImageView(WebCache) sd_setImageWithURL:]
+-[SDAnimatedImageView(WebCache) sd_setImageWithURL:placeholderImage:]
+-[SDAnimatedImageView(WebCache) sd_setImageWithURL:placeholderImage:options:]
+-[SDAnimatedImageView(WebCache) sd_setImageWithURL:placeholderImage:options:context:]
+-[SDAnimatedImageView(WebCache) sd_setImageWithURL:completed:]
+-[SDAnimatedImageView(WebCache) sd_setImageWithURL:placeholderImage:completed:]
+-[SDAnimatedImageView(WebCache) sd_setImageWithURL:placeholderImage:options:completed:]
+-[SDAnimatedImageView(WebCache) sd_setImageWithURL:placeholderImage:options:progress:completed:]
+-[SDAnimatedImageView(WebCache) sd_setImageWithURL:placeholderImage:options:context:progress:completed:]
+___104-[SDAnimatedImageView(WebCache) sd_setImageWithURL:placeholderImage:options:context:progress:completed:]_block_invoke
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDAnimatedImageView+WebCache.m
+__104-[SDAnimatedImageView(WebCache) sd_setImageWithURL:placeholderImage:options:context:progress:completed:]_block_invoke
+-[SDGIFCoderFrame index]
+-[SDGIFCoderFrame setIndex:]
+-[SDGIFCoderFrame duration]
+-[SDGIFCoderFrame setDuration:]
+-[SDImageGIFCoder dealloc]
+-[SDImageGIFCoder didReceiveMemoryWarning:]
++[SDImageGIFCoder sharedCoder]
+___30+[SDImageGIFCoder sharedCoder]_block_invoke
+-[SDImageGIFCoder canDecodeFromData:]
+-[SDImageGIFCoder decodedImageWithData:options:]
+-[SDImageGIFCoder sd_imageLoopCountWithSource:]
+-[SDImageGIFCoder sd_frameDurationAtIndex:source:]
+-[SDImageGIFCoder canIncrementalDecodeFromData:]
+-[SDImageGIFCoder initIncrementalWithOptions:]
+-[SDImageGIFCoder updateIncrementalData:finished:]
+-[SDImageGIFCoder incrementalDecodedImageWithOptions:]
+-[SDImageGIFCoder canEncodeToFormat:]
+-[SDImageGIFCoder encodedDataWithImage:format:options:]
+-[SDImageGIFCoder initWithAnimatedImageData:options:]
+-[SDImageGIFCoder scanAndCheckFramesValidWithImageSource:]
+-[SDImageGIFCoder animatedImageData]
+-[SDImageGIFCoder animatedImageLoopCount]
+-[SDImageGIFCoder animatedImageFrameCount]
+-[SDImageGIFCoder animatedImageDurationAtIndex:]
+-[SDImageGIFCoder animatedImageFrameAtIndex:]
+-[SDImageGIFCoder .cxx_destruct]
+_OBJC_IVAR_$_SDGIFCoderFrame._index
+_OBJC_IVAR_$_SDGIFCoderFrame._duration
+_OBJC_IVAR_$_SDImageGIFCoder._imageSource
+_OBJC_IVAR_$_SDImageGIFCoder._frameCount
+_OBJC_IVAR_$_SDImageGIFCoder._scale
+_OBJC_IVAR_$_SDImageGIFCoder._finished
+_OBJC_IVAR_$_SDImageGIFCoder._imageData
+_OBJC_IVAR_$_SDImageGIFCoder._width
+_OBJC_IVAR_$_SDImageGIFCoder._height
+_OBJC_IVAR_$_SDImageGIFCoder._loopCount
+_OBJC_IVAR_$_SDImageGIFCoder._frames
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageGIFCoder.m
+__30+[SDImageGIFCoder sharedCoder]_block_invoke
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageCoder.m
++[UIImage(MultiFormat) sd_imageWithData:]
++[UIImage(MultiFormat) sd_imageWithData:scale:]
++[UIImage(MultiFormat) sd_imageWithData:scale:firstFrameOnly:]
+-[UIImage(MultiFormat) sd_imageData]
+-[UIImage(MultiFormat) sd_imageDataAsFormat:]
+-[UIImage(MultiFormat) sd_imageDataAsFormat:compressionQuality:]
+-[UIImage(MultiFormat) sd_imageDataAsFormat:compressionQuality:firstFrameOnly:]
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/UIImage+MultiFormat.m
++[SDWebImageDownloader initialize]
++[SDWebImageDownloader sharedDownloader]
+___40+[SDWebImageDownloader sharedDownloader]_block_invoke
+-[SDWebImageDownloader init]
+-[SDWebImageDownloader initWithConfig:]
+-[SDWebImageDownloader dealloc]
+-[SDWebImageDownloader invalidateSessionAndCancel:]
+-[SDWebImageDownloader setValue:forHTTPHeaderField:]
+-[SDWebImageDownloader valueForHTTPHeaderField:]
+-[SDWebImageDownloader downloadImageWithURL:completed:]
+-[SDWebImageDownloader downloadImageWithURL:options:progress:completed:]
+-[SDWebImageDownloader downloadImageWithURL:options:context:progress:completed:]
+___80-[SDWebImageDownloader downloadImageWithURL:options:context:progress:completed:]_block_invoke
+___copy_helper_block_.150
+___destroy_helper_block_.151
+-[SDWebImageDownloader createDownloaderOperationWithUrl:options:context:]
+-[SDWebImageDownloader cancel:]
+-[SDWebImageDownloader cancelAllDownloads]
+-[SDWebImageDownloader isSuspended]
+-[SDWebImageDownloader setSuspended:]
+-[SDWebImageDownloader currentDownloadCount]
+-[SDWebImageDownloader sessionConfiguration]
+-[SDWebImageDownloader observeValueForKeyPath:ofObject:change:context:]
+-[SDWebImageDownloader operationWithTask:]
+-[SDWebImageDownloader URLSession:dataTask:didReceiveResponse:completionHandler:]
+-[SDWebImageDownloader URLSession:dataTask:didReceiveData:]
+-[SDWebImageDownloader URLSession:dataTask:willCacheResponse:completionHandler:]
+-[SDWebImageDownloader URLSession:task:didCompleteWithError:]
+-[SDWebImageDownloader URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]
+-[SDWebImageDownloader URLSession:task:didReceiveChallenge:completionHandler:]
+-[SDWebImageDownloader config]
+-[SDWebImageDownloader requestModifier]
+-[SDWebImageDownloader setRequestModifier:]
+-[SDWebImageDownloader downloadQueue]
+-[SDWebImageDownloader setDownloadQueue:]
+-[SDWebImageDownloader lastAddedOperation]
+-[SDWebImageDownloader setLastAddedOperation:]
+-[SDWebImageDownloader URLOperations]
+-[SDWebImageDownloader setURLOperations:]
+-[SDWebImageDownloader HTTPHeaders]
+-[SDWebImageDownloader setHTTPHeaders:]
+-[SDWebImageDownloader HTTPHeadersLock]
+-[SDWebImageDownloader setHTTPHeadersLock:]
+-[SDWebImageDownloader operationsLock]
+-[SDWebImageDownloader setOperationsLock:]
+-[SDWebImageDownloader session]
+-[SDWebImageDownloader setSession:]
+-[SDWebImageDownloader .cxx_destruct]
+-[SDWebImageDownloadToken dealloc]
+-[SDWebImageDownloadToken initWithDownloadOperation:]
+-[SDWebImageDownloadToken downloadReceiveResponse:]
+-[SDWebImageDownloadToken cancel]
+-[SDWebImageDownloadToken url]
+-[SDWebImageDownloadToken setUrl:]
+-[SDWebImageDownloadToken request]
+-[SDWebImageDownloadToken setRequest:]
+-[SDWebImageDownloadToken response]
+-[SDWebImageDownloadToken setResponse:]
+-[SDWebImageDownloadToken downloadOperationCancelToken]
+-[SDWebImageDownloadToken setDownloadOperationCancelToken:]
+-[SDWebImageDownloadToken downloadOperation]
+-[SDWebImageDownloadToken setDownloadOperation:]
+-[SDWebImageDownloadToken downloader]
+-[SDWebImageDownloadToken setDownloader:]
+-[SDWebImageDownloadToken isCancelled]
+-[SDWebImageDownloadToken setCancelled:]
+-[SDWebImageDownloadToken .cxx_destruct]
+-[SDWebImageDownloader(SDImageLoader) canRequestImageForURL:]
+-[SDWebImageDownloader(SDImageLoader) requestImageWithURL:options:context:progress:completed:]
+-[SDWebImageDownloader(SDImageLoader) shouldBlockFailedURLWithURL:error:]
+_sharedDownloader.once
+_sharedDownloader.instance
+_OBJC_IVAR_$_SDWebImageDownloader._config
+_SDWebImageDownloaderContext
+_OBJC_IVAR_$_SDWebImageDownloader._downloadQueue
+_OBJC_IVAR_$_SDWebImageDownloader._URLOperations
+_OBJC_IVAR_$_SDWebImageDownloader._HTTPHeaders
+_OBJC_IVAR_$_SDWebImageDownloader._HTTPHeadersLock
+_OBJC_IVAR_$_SDWebImageDownloader._operationsLock
+_OBJC_IVAR_$_SDWebImageDownloader._session
+___block_descriptor_tmp.152
+l_OBJC_PROTOCOL_REFERENCE_$_SDWebImageDownloaderOperation
+_OBJC_IVAR_$_SDWebImageDownloader._requestModifier
+_OBJC_IVAR_$_SDWebImageDownloader._lastAddedOperation
+_OBJC_IVAR_$_SDWebImageDownloadToken._downloadOperation
+_OBJC_IVAR_$_SDWebImageDownloadToken._url
+_OBJC_IVAR_$_SDWebImageDownloadToken._request
+_OBJC_IVAR_$_SDWebImageDownloadToken._response
+_OBJC_IVAR_$_SDWebImageDownloadToken._downloadOperationCancelToken
+_OBJC_IVAR_$_SDWebImageDownloadToken._downloader
+_OBJC_IVAR_$_SDWebImageDownloadToken._cancelled
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageDownloader.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageDownloader.h
+__80-[SDWebImageDownloader downloadImageWithURL:options:context:progress:completed:]_block_invoke
+__40+[SDWebImageDownloader sharedDownloader]_block_invoke
++[NSData(ImageContentType) sd_imageFormatForImageData:]
++[NSData(ImageContentType) sd_UTTypeFromImageFormat:]
++[NSData(ImageContentType) sd_imageFormatFromUTType:]
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/NSData+ImageContentType.m
++[SDWebImageManager defaultImageCache]
++[SDWebImageManager setDefaultImageCache:]
++[SDWebImageManager defaultImageLoader]
++[SDWebImageManager setDefaultImageLoader:]
++[SDWebImageManager sharedManager]
+___34+[SDWebImageManager sharedManager]_block_invoke
+-[SDWebImageManager init]
+-[SDWebImageManager initWithCache:loader:]
+-[SDWebImageManager cacheKeyForURL:]
+-[SDWebImageManager cacheKeyForURL:cacheKeyFilter:]
+-[SDWebImageManager loadImageWithURL:options:progress:completed:]
+-[SDWebImageManager loadImageWithURL:options:context:progress:completed:]
+-[SDWebImageManager cancelAll]
+-[SDWebImageManager isRunning]
+-[SDWebImageManager callCacheProcessForOperation:url:options:context:progress:completed:]
+___89-[SDWebImageManager callCacheProcessForOperation:url:options:context:progress:completed:]_block_invoke
+___copy_helper_block_.146
+___destroy_helper_block_.147
+-[SDWebImageManager callDownloadProcessForOperation:url:options:context:cachedImage:cachedData:cacheType:progress:completed:]
+___125-[SDWebImageManager callDownloadProcessForOperation:url:options:context:cachedImage:cachedData:cacheType:progress:completed:]_block_invoke
+___copy_helper_block_.181
+___destroy_helper_block_.182
+-[SDWebImageManager callStoreCacheProcessForOperation:url:options:context:downloadedImage:downloadedData:finished:progress:completed:]
+___134-[SDWebImageManager callStoreCacheProcessForOperation:url:options:context:downloadedImage:downloadedData:finished:progress:completed:]_block_invoke
+___copy_helper_block_.200
+___destroy_helper_block_.201
+___134-[SDWebImageManager callStoreCacheProcessForOperation:url:options:context:downloadedImage:downloadedData:finished:progress:completed:]_block_invoke.203
+-[SDWebImageManager safelyRemoveOperationFromRunning:]
+-[SDWebImageManager callCompletionBlockForOperation:completion:error:url:]
+-[SDWebImageManager callCompletionBlockForOperation:completion:image:data:error:cacheType:finished:url:]
+___104-[SDWebImageManager callCompletionBlockForOperation:completion:image:data:error:cacheType:finished:url:]_block_invoke
+___104-[SDWebImageManager callCompletionBlockForOperation:completion:image:data:error:cacheType:finished:url:]_block_invoke.210
+___copy_helper_block_.211
+___destroy_helper_block_.212
+-[SDWebImageManager shouldBlockFailedURLWithURL:error:]
+-[SDWebImageManager processedContextWithContext:]
+-[SDWebImageManager delegate]
+-[SDWebImageManager setDelegate:]
+-[SDWebImageManager imageCache]
+-[SDWebImageManager setImageCache:]
+-[SDWebImageManager imageLoader]
+-[SDWebImageManager setImageLoader:]
+-[SDWebImageManager transformer]
+-[SDWebImageManager setTransformer:]
+-[SDWebImageManager cacheKeyFilter]
+-[SDWebImageManager setCacheKeyFilter:]
+-[SDWebImageManager cacheSerializer]
+-[SDWebImageManager setCacheSerializer:]
+-[SDWebImageManager failedURLs]
+-[SDWebImageManager setFailedURLs:]
+-[SDWebImageManager failedURLsLock]
+-[SDWebImageManager setFailedURLsLock:]
+-[SDWebImageManager runningOperations]
+-[SDWebImageManager setRunningOperations:]
+-[SDWebImageManager runningOperationsLock]
+-[SDWebImageManager setRunningOperationsLock:]
+-[SDWebImageManager .cxx_destruct]
+-[SDWebImageCombinedOperation cancel]
+-[SDWebImageCombinedOperation cacheOperation]
+-[SDWebImageCombinedOperation setCacheOperation:]
+-[SDWebImageCombinedOperation loaderOperation]
+-[SDWebImageCombinedOperation setLoaderOperation:]
+-[SDWebImageCombinedOperation isCancelled]
+-[SDWebImageCombinedOperation setCancelled:]
+-[SDWebImageCombinedOperation manager]
+-[SDWebImageCombinedOperation setManager:]
+-[SDWebImageCombinedOperation .cxx_destruct]
+__defaultImageCache
+__defaultImageLoader
+_sharedManager.once
+_sharedManager.instance
+_OBJC_IVAR_$_SDWebImageManager._imageCache
+_OBJC_IVAR_$_SDWebImageManager._imageLoader
+_OBJC_IVAR_$_SDWebImageManager._failedURLs
+_OBJC_IVAR_$_SDWebImageManager._failedURLsLock
+_OBJC_IVAR_$_SDWebImageManager._runningOperations
+_OBJC_IVAR_$_SDWebImageManager._runningOperationsLock
+___block_descriptor_tmp.149
+___block_descriptor_tmp.184
+___block_descriptor_tmp.202
+___block_descriptor_tmp.213
+_OBJC_IVAR_$_SDWebImageManager._delegate
+_OBJC_IVAR_$_SDWebImageManager._transformer
+_OBJC_IVAR_$_SDWebImageManager._cacheKeyFilter
+_OBJC_IVAR_$_SDWebImageManager._cacheSerializer
+_OBJC_IVAR_$_SDWebImageCombinedOperation._cacheOperation
+_OBJC_IVAR_$_SDWebImageCombinedOperation._loaderOperation
+_OBJC_IVAR_$_SDWebImageCombinedOperation._cancelled
+_OBJC_IVAR_$_SDWebImageCombinedOperation._manager
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageManager.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageManager.h
+__104-[SDWebImageManager callCompletionBlockForOperation:completion:image:data:error:cacheType:finished:url:]_block_invoke.210
+__104-[SDWebImageManager callCompletionBlockForOperation:completion:image:data:error:cacheType:finished:url:]_block_invoke
+__134-[SDWebImageManager callStoreCacheProcessForOperation:url:options:context:downloadedImage:downloadedData:finished:progress:completed:]_block_invoke.203
+__134-[SDWebImageManager callStoreCacheProcessForOperation:url:options:context:downloadedImage:downloadedData:finished:progress:completed:]_block_invoke
+__125-[SDWebImageManager callDownloadProcessForOperation:url:options:context:cachedImage:cachedData:cacheType:progress:completed:]_block_invoke
+__89-[SDWebImageManager callCacheProcessForOperation:url:options:context:progress:completed:]_block_invoke
+__34+[SDWebImageManager sharedManager]_block_invoke
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageCompat.m
+-[SDWeakProxy initWithTarget:]
++[SDWeakProxy proxyWithTarget:]
+-[SDWeakProxy forwardingTargetForSelector:]
+-[SDWeakProxy forwardInvocation:]
+-[SDWeakProxy methodSignatureForSelector:]
+-[SDWeakProxy respondsToSelector:]
+-[SDWeakProxy isEqual:]
+-[SDWeakProxy hash]
+-[SDWeakProxy superclass]
+-[SDWeakProxy class]
+-[SDWeakProxy isKindOfClass:]
+-[SDWeakProxy isMemberOfClass:]
+-[SDWeakProxy conformsToProtocol:]
+-[SDWeakProxy isProxy]
+-[SDWeakProxy description]
+-[SDWeakProxy debugDescription]
+-[SDWeakProxy target]
+-[SDWeakProxy .cxx_destruct]
+_OBJC_IVAR_$_SDWeakProxy._target
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/Private/SDWeakProxy.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/Private/SDWeakProxy.h
+_SDImageLoaderProgressiveCoderKey
+l_OBJC_PROTOCOL_REFERENCE_$_SDProgressiveImageCoder
+l_OBJC_PROTOCOL_REFERENCE_$_SDAnimatedImageCoder
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageLoader.m
+SDImageLoaderDecodeProgressiveImageData
+SDImageLoaderDecodeImageData
++[SDAnimatedImage imageNamed:]
++[SDAnimatedImage imageNamed:inBundle:compatibleWithTraitCollection:]
++[SDAnimatedImage imageNamed:inBundle:scale:]
++[SDAnimatedImage imageWithContentsOfFile:]
++[SDAnimatedImage imageWithData:]
++[SDAnimatedImage imageWithData:scale:]
+-[SDAnimatedImage initWithContentsOfFile:]
+-[SDAnimatedImage initWithData:]
+-[SDAnimatedImage initWithData:scale:]
+-[SDAnimatedImage initWithData:scale:options:]
+-[SDAnimatedImage initWithAnimatedCoder:scale:]
+-[SDAnimatedImage preloadAllFrames]
+-[SDAnimatedImage unloadAllFrames]
+-[SDAnimatedImage initWithCoder:]
+-[SDAnimatedImage encodeWithCoder:]
++[SDAnimatedImage supportsSecureCoding]
+-[SDAnimatedImage animatedImageData]
+-[SDAnimatedImage animatedImageLoopCount]
+-[SDAnimatedImage animatedImageFrameCount]
+-[SDAnimatedImage animatedImageFrameAtIndex:]
+-[SDAnimatedImage animatedImageDurationAtIndex:]
+-[SDAnimatedImage animatedImageFormat]
+-[SDAnimatedImage setAnimatedImageFormat:]
+-[SDAnimatedImage isAllFramesLoaded]
+-[SDAnimatedImage setAllFramesLoaded:]
+-[SDAnimatedImage coder]
+-[SDAnimatedImage setCoder:]
+-[SDAnimatedImage loadedAnimatedImageFrames]
+-[SDAnimatedImage setLoadedAnimatedImageFrames:]
+-[SDAnimatedImage .cxx_destruct]
+-[SDAnimatedImage(MemoryCacheCost) sd_memoryCost]
+___SDImageScaleFromPath_block_invoke
+_OBJC_IVAR_$_SDAnimatedImage._coder
+_OBJC_IVAR_$_SDAnimatedImage._animatedImageFormat
+_OBJC_IVAR_$_SDAnimatedImage._allFramesLoaded
+_OBJC_IVAR_$_SDAnimatedImage._loadedAnimatedImageFrames
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDAnimatedImage.m
+__SDImageScaleFromPath_block_invoke
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDAnimatedImage.h
+SDImageScaleFromPath
++[SDImageCodersManager sharedManager]
+___37+[SDImageCodersManager sharedManager]_block_invoke
+-[SDImageCodersManager init]
+-[SDImageCodersManager coders]
+-[SDImageCodersManager setCoders:]
+-[SDImageCodersManager addCoder:]
+-[SDImageCodersManager removeCoder:]
+-[SDImageCodersManager canDecodeFromData:]
+-[SDImageCodersManager canEncodeToFormat:]
+-[SDImageCodersManager decodedImageWithData:options:]
+-[SDImageCodersManager encodedDataWithImage:format:options:]
+-[SDImageCodersManager codersLock]
+-[SDImageCodersManager setCodersLock:]
+-[SDImageCodersManager .cxx_destruct]
+_OBJC_IVAR_$_SDImageCodersManager._imageCoders
+_OBJC_IVAR_$_SDImageCodersManager._codersLock
+l_OBJC_PROTOCOL_REFERENCE_$_SDImageCoder
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageCodersManager.m
+__37+[SDImageCodersManager sharedManager]_block_invoke
+-[UIButton(WebCache) sd_currentImageURL]
+-[UIButton(WebCache) sd_imageURLForState:]
+-[UIButton(WebCache) sd_setImageWithURL:forState:]
+-[UIButton(WebCache) sd_setImageWithURL:forState:placeholderImage:]
+-[UIButton(WebCache) sd_setImageWithURL:forState:placeholderImage:options:]
+-[UIButton(WebCache) sd_setImageWithURL:forState:placeholderImage:options:context:]
+-[UIButton(WebCache) sd_setImageWithURL:forState:completed:]
+-[UIButton(WebCache) sd_setImageWithURL:forState:placeholderImage:completed:]
+-[UIButton(WebCache) sd_setImageWithURL:forState:placeholderImage:options:completed:]
+-[UIButton(WebCache) sd_setImageWithURL:forState:placeholderImage:options:progress:completed:]
+-[UIButton(WebCache) sd_setImageWithURL:forState:placeholderImage:options:context:progress:completed:]
+___102-[UIButton(WebCache) sd_setImageWithURL:forState:placeholderImage:options:context:progress:completed:]_block_invoke
+___102-[UIButton(WebCache) sd_setImageWithURL:forState:placeholderImage:options:context:progress:completed:]_block_invoke.21
+___copy_helper_block_.22
+___destroy_helper_block_.23
+-[UIButton(WebCache) sd_currentBackgroundImageURL]
+-[UIButton(WebCache) sd_backgroundImageURLForState:]
+-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:]
+-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:placeholderImage:]
+-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:placeholderImage:options:]
+-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:placeholderImage:options:context:]
+-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:completed:]
+-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:placeholderImage:completed:]
+-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:placeholderImage:options:completed:]
+-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:placeholderImage:options:progress:completed:]
+-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:placeholderImage:options:context:progress:completed:]
+___112-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:placeholderImage:options:context:progress:completed:]_block_invoke
+___copy_helper_block_.36
+___destroy_helper_block_.37
+___112-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:placeholderImage:options:context:progress:completed:]_block_invoke.39
+___copy_helper_block_.40
+___destroy_helper_block_.41
+-[UIButton(WebCache) sd_cancelImageLoadForState:]
+-[UIButton(WebCache) sd_cancelBackgroundImageLoadForState:]
+-[UIButton(WebCache) sd_imageURLStorage]
+___block_descriptor_tmp.25
+___block_descriptor_tmp.38
+___block_descriptor_tmp.42
+_imageURLStorageKey
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/UIButton+WebCache.m
+backgroundImageOperationKeyForState
+imageOperationKeyForState
+__112-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:placeholderImage:options:context:progress:completed:]_block_invoke.39
+__112-[UIButton(WebCache) sd_setBackgroundImageWithURL:forState:placeholderImage:options:context:progress:completed:]_block_invoke
+backgroundImageURLKeyForState
+__102-[UIButton(WebCache) sd_setImageWithURL:forState:placeholderImage:options:context:progress:completed:]_block_invoke.21
+__102-[UIButton(WebCache) sd_setImageWithURL:forState:placeholderImage:options:context:progress:completed:]_block_invoke
+imageURLKeyForState
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageCacheDefine.m
+SDImageCacheDecodeImageData
++[SDImageAssetManager sharedAssetManager]
+___41+[SDImageAssetManager sharedAssetManager]_block_invoke
+-[SDImageAssetManager init]
+-[SDImageAssetManager dealloc]
+-[SDImageAssetManager didReceiveMemoryWarning:]
+-[SDImageAssetManager getPathForName:bundle:preferredScale:]
+-[SDImageAssetManager imageForName:]
+-[SDImageAssetManager storeImage:forName:]
+-[SDImageAssetManager imageTable]
+-[SDImageAssetManager setImageTable:]
+-[SDImageAssetManager .cxx_destruct]
+___SDBundlePreferredScales_block_invoke
+_sharedAssetManager.onceToken
+_sharedAssetManager.assetManager
+_OBJC_IVAR_$_SDImageAssetManager._imageTable
+_OBJC_IVAR_$_SDImageAssetManager._lock
+_SDBundlePreferredScales.scales
+_SDBundlePreferredScales.onceToken
+___block_descriptor_tmp.71
+___block_literal_global.72
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/Private/SDImageAssetManager.m
+__SDBundlePreferredScales_block_invoke
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/Private/SDImageAssetManager.h
+SDBundlePreferredScales
+__41+[SDImageAssetManager sharedAssetManager]_block_invoke
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageDefine.m
+SDScaledImageForScaleFactor
+SDScaledImageForKey
+SDImageScaleFactorForKey
+SDImageScaleFactors
+-[UIView(WebCacheOperation) sd_operationDictionary]
+-[UIView(WebCacheOperation) sd_imageLoadOperationForKey:]
+-[UIView(WebCacheOperation) sd_setImageLoadOperation:forKey:]
+-[UIView(WebCacheOperation) sd_cancelImageLoadOperationWithKey:]
+-[UIView(WebCacheOperation) sd_removeImageLoadOperationWithKey:]
+_loadOperationKey
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/UIView+WebCacheOperation.m
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDAnimatedImageRep.m
+-[UIImageView(HighlightedWebCache) sd_setHighlightedImageWithURL:]
+-[UIImageView(HighlightedWebCache) sd_setHighlightedImageWithURL:options:]
+-[UIImageView(HighlightedWebCache) sd_setHighlightedImageWithURL:options:context:]
+-[UIImageView(HighlightedWebCache) sd_setHighlightedImageWithURL:completed:]
+-[UIImageView(HighlightedWebCache) sd_setHighlightedImageWithURL:options:completed:]
+-[UIImageView(HighlightedWebCache) sd_setHighlightedImageWithURL:options:progress:completed:]
+-[UIImageView(HighlightedWebCache) sd_setHighlightedImageWithURL:options:context:progress:completed:]
+___101-[UIImageView(HighlightedWebCache) sd_setHighlightedImageWithURL:options:context:progress:completed:]_block_invoke
+___101-[UIImageView(HighlightedWebCache) sd_setHighlightedImageWithURL:options:context:progress:completed:]_block_invoke.12
+___copy_helper_block_.13
+___destroy_helper_block_.14
+___block_descriptor_tmp.16
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.m
+__101-[UIImageView(HighlightedWebCache) sd_setHighlightedImageWithURL:options:context:progress:completed:]_block_invoke.12
+__101-[UIImageView(HighlightedWebCache) sd_setHighlightedImageWithURL:options:context:progress:completed:]_block_invoke
++[SDImageCache sharedImageCache]
+___32+[SDImageCache sharedImageCache]_block_invoke
+-[SDImageCache init]
+-[SDImageCache initWithNamespace:]
+-[SDImageCache initWithNamespace:diskCacheDirectory:]
+-[SDImageCache initWithNamespace:diskCacheDirectory:config:]
+-[SDImageCache dealloc]
+-[SDImageCache cachePathForKey:]
+-[SDImageCache userCacheDirectory]
+-[SDImageCache migrateDiskCacheDirectory]
+___41-[SDImageCache migrateDiskCacheDirectory]_block_invoke
+___41-[SDImageCache migrateDiskCacheDirectory]_block_invoke_2
+___copy_helper_block_.63
+___destroy_helper_block_.64
+___copy_helper_block_.66
+___destroy_helper_block_.67
+-[SDImageCache storeImage:forKey:completion:]
+-[SDImageCache storeImage:forKey:toDisk:completion:]
+-[SDImageCache storeImage:imageData:forKey:toDisk:completion:]
+-[SDImageCache storeImage:imageData:forKey:toMemory:toDisk:completion:]
+___71-[SDImageCache storeImage:imageData:forKey:toMemory:toDisk:completion:]_block_invoke
+___71-[SDImageCache storeImage:imageData:forKey:toMemory:toDisk:completion:]_block_invoke_2
+___copy_helper_block_.95
+___destroy_helper_block_.96
+___copy_helper_block_.98
+___destroy_helper_block_.99
+-[SDImageCache storeImageToMemory:forKey:]
+-[SDImageCache storeImageDataToDisk:forKey:]
+___44-[SDImageCache storeImageDataToDisk:forKey:]_block_invoke
+___copy_helper_block_.101
+___destroy_helper_block_.102
+-[SDImageCache _storeImageDataToDisk:forKey:]
+-[SDImageCache diskImageExistsWithKey:completion:]
+___50-[SDImageCache diskImageExistsWithKey:completion:]_block_invoke
+___50-[SDImageCache diskImageExistsWithKey:completion:]_block_invoke_2
+___copy_helper_block_.111
+___destroy_helper_block_.112
+-[SDImageCache diskImageDataExistsWithKey:]
+___43-[SDImageCache diskImageDataExistsWithKey:]_block_invoke
+___copy_helper_block_.114
+___destroy_helper_block_.115
+-[SDImageCache _diskImageDataExistsWithKey:]
+-[SDImageCache diskImageDataForKey:]
+___36-[SDImageCache diskImageDataForKey:]_block_invoke
+___copy_helper_block_.121
+___destroy_helper_block_.122
+-[SDImageCache imageFromMemoryCacheForKey:]
+-[SDImageCache imageFromDiskCacheForKey:]
+-[SDImageCache imageFromCacheForKey:]
+-[SDImageCache diskImageDataBySearchingAllPathsForKey:]
+-[SDImageCache diskImageForKey:]
+-[SDImageCache diskImageForKey:data:]
+-[SDImageCache diskImageForKey:data:options:context:]
+-[SDImageCache queryCacheOperationForKey:done:]
+-[SDImageCache queryCacheOperationForKey:options:done:]
+-[SDImageCache queryCacheOperationForKey:options:context:done:]
+___63-[SDImageCache queryCacheOperationForKey:options:context:done:]_block_invoke
+___63-[SDImageCache queryCacheOperationForKey:options:context:done:]_block_invoke_2
+___copy_helper_block_.160
+___destroy_helper_block_.161
+-[SDImageCache removeImageForKey:withCompletion:]
+-[SDImageCache removeImageForKey:fromDisk:withCompletion:]
+-[SDImageCache removeImageForKey:fromMemory:fromDisk:withCompletion:]
+___69-[SDImageCache removeImageForKey:fromMemory:fromDisk:withCompletion:]_block_invoke
+___69-[SDImageCache removeImageForKey:fromMemory:fromDisk:withCompletion:]_block_invoke_2
+___copy_helper_block_.174
+___destroy_helper_block_.175
+___copy_helper_block_.177
+___destroy_helper_block_.178
+-[SDImageCache removeImageFromMemoryForKey:]
+-[SDImageCache removeImageFromDiskForKey:]
+___42-[SDImageCache removeImageFromDiskForKey:]_block_invoke
+___copy_helper_block_.182
+___destroy_helper_block_.183
+-[SDImageCache _removeImageFromDiskForKey:]
+-[SDImageCache clearMemory]
+-[SDImageCache clearDiskOnCompletion:]
+___38-[SDImageCache clearDiskOnCompletion:]_block_invoke
+___38-[SDImageCache clearDiskOnCompletion:]_block_invoke_2
+___copy_helper_block_.189
+___destroy_helper_block_.190
+___copy_helper_block_.192
+___destroy_helper_block_.193
+-[SDImageCache deleteOldFilesWithCompletionBlock:]
+___50-[SDImageCache deleteOldFilesWithCompletionBlock:]_block_invoke
+___50-[SDImageCache deleteOldFilesWithCompletionBlock:]_block_invoke_2
+___copy_helper_block_.197
+___destroy_helper_block_.198
+-[SDImageCache applicationWillTerminate:]
+-[SDImageCache applicationDidEnterBackground:]
+___46-[SDImageCache applicationDidEnterBackground:]_block_invoke
+___copy_helper_block_.218
+___destroy_helper_block_.219
+___46-[SDImageCache applicationDidEnterBackground:]_block_invoke.223
+___copy_helper_block_.224
+___destroy_helper_block_.225
+-[SDImageCache totalDiskSize]
+___29-[SDImageCache totalDiskSize]_block_invoke
+___copy_helper_block_.229
+___destroy_helper_block_.230
+-[SDImageCache totalDiskCount]
+___30-[SDImageCache totalDiskCount]_block_invoke
+___copy_helper_block_.234
+___destroy_helper_block_.235
+-[SDImageCache calculateSizeWithCompletionBlock:]
+___49-[SDImageCache calculateSizeWithCompletionBlock:]_block_invoke
+___49-[SDImageCache calculateSizeWithCompletionBlock:]_block_invoke_2
+___copy_helper_block_.237
+___destroy_helper_block_.238
+___copy_helper_block_.240
+___destroy_helper_block_.241
++[SDImageCache imageOptionsFromCacheOptions:]
+-[SDImageCache config]
+-[SDImageCache setConfig:]
+-[SDImageCache diskCachePath]
+-[SDImageCache setDiskCachePath:]
+-[SDImageCache additionalCachePathBlock]
+-[SDImageCache setAdditionalCachePathBlock:]
+-[SDImageCache memCache]
+-[SDImageCache setMemCache:]
+-[SDImageCache diskCache]
+-[SDImageCache setDiskCache:]
+-[SDImageCache ioQueue]
+-[SDImageCache setIoQueue:]
+-[SDImageCache .cxx_destruct]
+-[SDImageCache(SDImageCache) queryImageForKey:options:context:completion:]
+-[SDImageCache(SDImageCache) storeImage:imageData:forKey:cacheType:completion:]
+-[SDImageCache(SDImageCache) removeImageForKey:cacheType:completion:]
+-[SDImageCache(SDImageCache) containsImageForKey:cacheType:completion:]
+___71-[SDImageCache(SDImageCache) containsImageForKey:cacheType:completion:]_block_invoke
+___copy_helper_block_.315
+___destroy_helper_block_.316
+___71-[SDImageCache(SDImageCache) containsImageForKey:cacheType:completion:]_block_invoke.320
+___copy_helper_block_.321
+___destroy_helper_block_.322
+-[SDImageCache(SDImageCache) clearWithCacheType:completion:]
+_sharedImageCache.once
+_sharedImageCache.instance
+_OBJC_IVAR_$_SDImageCache._ioQueue
+_OBJC_IVAR_$_SDImageCache._config
+_OBJC_IVAR_$_SDImageCache._memCache
+_OBJC_IVAR_$_SDImageCache._diskCachePath
+_OBJC_IVAR_$_SDImageCache._diskCache
+_migrateDiskCacheDirectory.onceToken
+___block_descriptor_tmp.65
+___block_descriptor_tmp.68
+___block_descriptor_tmp.97
+___block_descriptor_tmp.100
+___block_descriptor_tmp.103
+___block_descriptor_tmp.113
+___block_descriptor_tmp.116
+___block_descriptor_tmp.123
+___block_descriptor_tmp.162
+___block_descriptor_tmp.176
+___block_descriptor_tmp.179
+___block_descriptor_tmp.191
+___block_descriptor_tmp.194
+___block_descriptor_tmp.199
+___block_descriptor_tmp.220
+___block_descriptor_tmp.226
+___block_descriptor_tmp.231
+___block_descriptor_tmp.236
+___block_descriptor_tmp.239
+___block_descriptor_tmp.242
+_OBJC_IVAR_$_SDImageCache._additionalCachePathBlock
+___block_descriptor_tmp.318
+___block_descriptor_tmp.323
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageCache.m
+__71-[SDImageCache(SDImageCache) containsImageForKey:cacheType:completion:]_block_invoke.320
+__71-[SDImageCache(SDImageCache) containsImageForKey:cacheType:completion:]_block_invoke
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDImageCache.h
+__49-[SDImageCache calculateSizeWithCompletionBlock:]_block_invoke_2
+__49-[SDImageCache calculateSizeWithCompletionBlock:]_block_invoke
+__30-[SDImageCache totalDiskCount]_block_invoke
+__29-[SDImageCache totalDiskSize]_block_invoke
+__46-[SDImageCache applicationDidEnterBackground:]_block_invoke.223
+__46-[SDImageCache applicationDidEnterBackground:]_block_invoke
+__50-[SDImageCache deleteOldFilesWithCompletionBlock:]_block_invoke_2
+__50-[SDImageCache deleteOldFilesWithCompletionBlock:]_block_invoke
+__38-[SDImageCache clearDiskOnCompletion:]_block_invoke_2
+__38-[SDImageCache clearDiskOnCompletion:]_block_invoke
+__42-[SDImageCache removeImageFromDiskForKey:]_block_invoke
+__69-[SDImageCache removeImageForKey:fromMemory:fromDisk:withCompletion:]_block_invoke_2
+__69-[SDImageCache removeImageForKey:fromMemory:fromDisk:withCompletion:]_block_invoke
+__63-[SDImageCache queryCacheOperationForKey:options:context:done:]_block_invoke_2
+__63-[SDImageCache queryCacheOperationForKey:options:context:done:]_block_invoke
+__36-[SDImageCache diskImageDataForKey:]_block_invoke
+__43-[SDImageCache diskImageDataExistsWithKey:]_block_invoke
+__50-[SDImageCache diskImageExistsWithKey:completion:]_block_invoke_2
+__50-[SDImageCache diskImageExistsWithKey:completion:]_block_invoke
+__44-[SDImageCache storeImageDataToDisk:forKey:]_block_invoke
+__71-[SDImageCache storeImage:imageData:forKey:toMemory:toDisk:completion:]_block_invoke_2
+__71-[SDImageCache storeImage:imageData:forKey:toMemory:toDisk:completion:]_block_invoke
+__41-[SDImageCache migrateDiskCacheDirectory]_block_invoke_2
+__41-[SDImageCache migrateDiskCacheDirectory]_block_invoke
+__32+[SDImageCache sharedImageCache]_block_invoke
+-[UIView(WebCache) sd_imageURL]
+-[UIView(WebCache) setSd_imageURL:]
+-[UIView(WebCache) sd_latestOperationKey]
+-[UIView(WebCache) setSd_latestOperationKey:]
+-[UIView(WebCache) sd_imageProgress]
+-[UIView(WebCache) setSd_imageProgress:]
+-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]
+___113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.25
+___copy_helper_block_.26
+___destroy_helper_block_.27
+___113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.40
+___113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke_2
+___copy_helper_block_.47
+___destroy_helper_block_.48
+___copy_helper_block_.50
+___destroy_helper_block_.51
+___113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.54
+___113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke_2.61
+___113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.75
+___copy_helper_block_.76
+___destroy_helper_block_.77
+___copy_helper_block_.79
+___destroy_helper_block_.80
+___113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.87
+___113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.98
+___copy_helper_block_.99
+___destroy_helper_block_.100
+-[UIView(WebCache) sd_cancelCurrentImageLoad]
+-[UIView(WebCache) sd_setImage:imageData:basedOnClassOrViaCustomSetImageBlock:cacheType:imageURL:]
+-[UIView(WebCache) sd_setImage:imageData:basedOnClassOrViaCustomSetImageBlock:transition:cacheType:imageURL:]
+___109-[UIView(WebCache) sd_setImage:imageData:basedOnClassOrViaCustomSetImageBlock:transition:cacheType:imageURL:]_block_invoke
+___copy_helper_block_.107
+___destroy_helper_block_.108
+___109-[UIView(WebCache) sd_setImage:imageData:basedOnClassOrViaCustomSetImageBlock:transition:cacheType:imageURL:]_block_invoke.112
+___copy_helper_block_.115
+___destroy_helper_block_.116
+___109-[UIView(WebCache) sd_setImage:imageData:basedOnClassOrViaCustomSetImageBlock:transition:cacheType:imageURL:]_block_invoke.119
+___copy_helper_block_.122
+___destroy_helper_block_.123
+___109-[UIView(WebCache) sd_setImage:imageData:basedOnClassOrViaCustomSetImageBlock:transition:cacheType:imageURL:]_block_invoke.125
+___109-[UIView(WebCache) sd_setImage:imageData:basedOnClassOrViaCustomSetImageBlock:transition:cacheType:imageURL:]_block_invoke_2
+___copy_helper_block_.134
+___destroy_helper_block_.135
+___copy_helper_block_.141
+___destroy_helper_block_.142
+-[UIView(WebCache) sd_setNeedsLayout]
+-[UIView(WebCache) sd_imageTransition]
+-[UIView(WebCache) setSd_imageTransition:]
+-[UIView(WebCache) sd_imageIndicator]
+-[UIView(WebCache) setSd_imageIndicator:]
+-[UIView(WebCache) sd_startImageIndicator]
+___42-[UIView(WebCache) sd_startImageIndicator]_block_invoke.168
+-[UIView(WebCache) sd_stopImageIndicator]
+___41-[UIView(WebCache) sd_stopImageIndicator]_block_invoke.177
+___copy_helper_block_.178
+___destroy_helper_block_.179
+___block_descriptor_tmp.28
+___block_descriptor_tmp.49
+___block_descriptor_tmp.53
+___block_descriptor_tmp.66
+___block_descriptor_tmp.82
+___block_descriptor_tmp.101
+___block_descriptor_tmp.117
+___block_descriptor_tmp.124
+___block_descriptor_tmp.136
+___block_descriptor_tmp.144
+___block_descriptor_tmp.180
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/UIView+WebCache.m
+__41-[UIView(WebCache) sd_stopImageIndicator]_block_invoke.177
+__41-[UIView(WebCache) sd_stopImageIndicator]_block_invoke
+__42-[UIView(WebCache) sd_startImageIndicator]_block_invoke.168
+__42-[UIView(WebCache) sd_startImageIndicator]_block_invoke
+__109-[UIView(WebCache) sd_setImage:imageData:basedOnClassOrViaCustomSetImageBlock:transition:cacheType:imageURL:]_block_invoke_2
+__109-[UIView(WebCache) sd_setImage:imageData:basedOnClassOrViaCustomSetImageBlock:transition:cacheType:imageURL:]_block_invoke.125
+__109-[UIView(WebCache) sd_setImage:imageData:basedOnClassOrViaCustomSetImageBlock:transition:cacheType:imageURL:]_block_invoke.119
+__109-[UIView(WebCache) sd_setImage:imageData:basedOnClassOrViaCustomSetImageBlock:transition:cacheType:imageURL:]_block_invoke.112
+__109-[UIView(WebCache) sd_setImage:imageData:basedOnClassOrViaCustomSetImageBlock:transition:cacheType:imageURL:]_block_invoke
+__113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.98
+__113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.87
+__113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.75
+__113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke_2.61
+__113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.54
+__113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.69
+__113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke_2
+__113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.40
+__113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke.25
+__113-[UIView(WebCache) sd_internalSetImageWithURL:placeholderImage:options:context:setImageBlock:progress:completed:]_block_invoke
+-[UIImage(Metadata) sd_imageLoopCount]
+-[UIImage(Metadata) setSd_imageLoopCount:]
+-[UIImage(Metadata) sd_isAnimated]
+-[UIImage(Metadata) sd_imageFormat]
+-[UIImage(Metadata) setSd_imageFormat:]
+-[UIImage(Metadata) setSd_isIncremental:]
+-[UIImage(Metadata) sd_isIncremental]
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/UIImage+Metadata.m
+-[SDWebImageCacheSerializer initWithBlock:]
++[SDWebImageCacheSerializer cacheSerializerWithBlock:]
+-[SDWebImageCacheSerializer cacheDataWithImage:originalData:imageURL:]
+-[SDWebImageCacheSerializer block]
+-[SDWebImageCacheSerializer setBlock:]
+-[SDWebImageCacheSerializer .cxx_destruct]
+_OBJC_IVAR_$_SDWebImageCacheSerializer._block
+l_OBJC_PROTOCOL_$_SDWebImageCacheSerializer
+l_OBJC_LABEL_PROTOCOL_$_SDWebImageCacheSerializer
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/SDWebImageCacheSerializer.m
+-[SDImageCachesManagerOperation init]
+-[SDImageCachesManagerOperation beginWithTotalCount:]
+-[SDImageCachesManagerOperation pendingCount]
+-[SDImageCachesManagerOperation completeOne]
+-[SDImageCachesManagerOperation cancel]
+-[SDImageCachesManagerOperation done]
+-[SDImageCachesManagerOperation reset]
+-[SDImageCachesManagerOperation setFinished:]
+-[SDImageCachesManagerOperation setExecuting:]
+-[SDImageCachesManagerOperation setCancelled:]
+-[SDImageCachesManagerOperation isExecuting]
+-[SDImageCachesManagerOperation isFinished]
+-[SDImageCachesManagerOperation isCancelled]
+-[SDImageCachesManagerOperation .cxx_destruct]
+_OBJC_IVAR_$_SDImageCachesManagerOperation._pendingCountLock
+_OBJC_IVAR_$_SDImageCachesManagerOperation._pendingCount
+_OBJC_IVAR_$_SDImageCachesManagerOperation._finished
+_OBJC_IVAR_$_SDImageCachesManagerOperation._executing
+_OBJC_IVAR_$_SDImageCachesManagerOperation._cancelled
+/Volumes/Data/ph/Work/2019/Matt/CatFacts/source/cat-facts/iOS/cat-facts-ios/Carthage/Checkouts/SDWebImage/SDWebImage/Private/SDImageCachesManagerOperation.m
+-[NSOperation isCancelled]
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSOperation.h
+-[NSOperation isFinished]
+-[NSOperation isExecuting]
+/Users/Heracles/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/SDWebImage/5.0.1/Build/Intermediates.noindex/SDWebImage.build/Release-iphoneos/SDWebImage.build/DerivedSources/SDWebImage_vers.c
+__ZL15__ARCLite__loadv
+__ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+__ZL22add_image_hook_swiftV1PK11mach_headerl
+__ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+__ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+__ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+__ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+__ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+__ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+__ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+__ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+__ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+__ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+__ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+__ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+__ZL32__arclite_object_getIndexedIvarsP11objc_object
+__ZL23__arclite_objc_getClassPKc
+__ZL27__arclite_objc_getMetaClassPKc
+__ZL31__arclite_objc_getRequiredClassPKc
+__ZL26__arclite_objc_lookUpClassPKc
+__ZL26__arclite_objc_getProtocolPKc
+__ZL23__arclite_class_getNameP10objc_class
+__ZL26__arclite_protocol_getNameP8Protocol
+__ZL37__arclite_objc_copyClassNamesForImagePKcPj
+__ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+__ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+__ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+__ZL14initialize_impP11objc_objectP13objc_selector
+__ZL18allocateMaybeSwiftP18glue_swift_class_tm
+__ZL22copySwiftV1MangledNamePKcb
+__ZL13demangledNamePKcb
+__ZL16scanMangledFieldRPKcS0_S1_Ri
+__ZL30arclite_uninitialized_functionv
+__ZL12cxxConstructP11objc_object
+__ZL20fixStringForCoreDataP11objc_object
+_OBJC_METACLASS_$___ARCLite__
+__ZL24OBJC_CLASS_$___ARCLite__
+__ZL31OBJC_METACLASS_RO_$___ARCLite__
+__non_lazy_classes
+__ZL27OBJC_CLASS_RO_$___ARCLite__
+__ZL11_class_name
+__ZL32OBJC_$_CLASS_METHODS___ARCLite__
+__ZL17_load_method_name
+__ZL17_load_method_type
+l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+__ZL30NSUndoManagerProxy_targetClass
+__ZL29original_NSManagedObject_init
+__ZL40original_NSManagedObject_allocWithEntity
+__ZL35original_NSManagedObject_allocBatch
+__ZL25NSMutableDictionary_class
+__ZL22NSConstantString_class
+__ZL14NSString_class
+__ZL36original_NSKKMS_fastIndexForKnownKey
+__ZL27original_NSKKMS_indexForKey
+__ZL28original_NSKKsD_objectForKey
+__ZL34original_NSKKsD_removeObjectForKey
+__ZL32original_NSKKsD_setObject_forKey
+__ZL40original_NSKKsD_addEntriesFromDictionary
+__ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZL31original_objc_allocateClassPair
+__ZL31original_object_getIndexedIvars
+__ZL22original_objc_getClass
+__ZL26original_objc_getMetaClass
+__ZL30original_objc_getRequiredClass
+__ZL25original_objc_lookUpClass
+__ZL25original_objc_getProtocol
+__ZL22original_class_getName
+__ZL25original_protocol_getName
+__ZL36original_objc_copyClassNamesForImage
+__ZL12demangleLock
+__ZL9Demangled
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -mlinker-version=409.12
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70
+fixStringForCoreData
+cxxConstruct
+arclite_uninitialized_function
+scanMangledField
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk/usr/include/_ctype.h
+__isctype
+demangledName
+copySwiftV1DemangledName
+copySwiftV1MangledName
+allocateMaybeSwift
+word_align
+isSwift
+initialize_imp
+transcribeProperties
+property_list_nth
+transcribeProtocols
+transcribeMethods
+data
+method_list_nth
+__arclite_objc_copyClassNamesForImage
+__arclite_protocol_getName
+__arclite_class_getName
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+__arclite_objc_getClass
+__arclite_object_getIndexedIvars
+__arclite_objc_allocateClassPair
+metaclass
+__arclite_objc_readClassPair
+transcribeIvars
+ivar_list_nth
+max
+alignment
+ro
+fastFlags
+__arclite_NSKKsD_addEntriesFromDictionary
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+__arclite_NSManagedObject_init
+__arclite_NSUndoManagerProxy_isKindOfClass
+add_image_hook_swiftV1
+patch_lazy_pointers
+patch_t<const char **(const char *, unsigned int *)>
+patch_t<const char *(Protocol *)>
+patch_t<const char *(Class)>
+patch_t<Protocol *(const char *)>
+patch_t<Class (const char *)>
+patch_t<void *(id)>
+patch_t<Class (Class, const char *, unsigned long)>
+patch_t<Class (Class, const objc_image_info *)>
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+__ARCLite__load
+install_swiftV1
+replaceMethod
+install_dict_nil_value
+addOrReplaceMethod
+keyedGetter

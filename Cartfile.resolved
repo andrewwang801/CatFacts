@@ -1,0 +1,6 @@
+github "MessageKit/MessageInputBar" "0.4.0"
+github "MessageKit/MessageKit" "2.0.0"
+github "m1entus/MZAppearance" "de07b5fdd79465e4193095cd33a66843106e71de"
+github "m1entus/MZFormSheetPresentationController" "398a82a1900140a627c64ac778772468c4079259"
+github "marmelroy/PhoneNumberKit" "2.6.0"
+github "rs/SDWebImage" "5.3.1"

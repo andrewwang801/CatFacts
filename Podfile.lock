@@ -1,27 +1,20 @@
 PODS:
-  - DateTools (1.7.0)
-  - MZAppearance (1.1.6)
-  - MZFormSheetPresentationController (2.2.0):
-    - MZAppearance
-  - SDWebImage (3.7.3):
-    - SDWebImage/Core (= 3.7.3)
-  - SDWebImage/Core (3.7.3)
-  - SVProgressHUD (1.1.3)
-  - SwiftyStoreKit (0.1.5)
+  - DropDown (2.3.13)
+  - IBAnimatable (6.0.0)
 
 DEPENDENCIES:
-  - DateTools
-  - MZFormSheetPresentationController
-  - SDWebImage
-  - SVProgressHUD
-  - SwiftyStoreKit
+  - DropDown (= 2.3.13)
+  - IBAnimatable
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - DropDown
+    - IBAnimatable
 
 SPEC CHECKSUMS:
-  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
-  MZAppearance: 0c06d3fa9cc55142f1da14bc8631fbe8fd6e19d5
-  MZFormSheetPresentationController: 3405c52eb182abfb8fa2b635981930eeeec37396
-  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
-  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
-  SwiftyStoreKit: 9c6f6eebaa9aaee743166c57d6edcd6437bb525c
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: a280279293697229f763f3b471e297fcbdcabef6
+
+COCOAPODS: 1.8.4

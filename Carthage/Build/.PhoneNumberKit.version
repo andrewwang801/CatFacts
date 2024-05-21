@@ -1,0 +1,10 @@
+{
+  "commitish" : "2.6.0",
+  "iOS" : [
+    {
+      "name" : "PhoneNumberKit",
+      "hash" : "914eee62cb920ca3231dd401c227b1b11ba83b49c790aecf9e71ded69a03498e",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ]
+}
