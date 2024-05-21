@@ -208,7 +208,7 @@ class CatFactsApi: NSObject {
             
             let _query = PFQuery(className: "Conversation")
             _query.whereKey("contact", equalTo: contact!)
-            _query.orderByDescending("createdAt")
+            _query.orderByAscending("createdAt")
             
             SVProgressHUD.showWithMaskType(.Black)
             _query.findObjectsInBackgroundWithBlock({ (objects, error) -> Void in

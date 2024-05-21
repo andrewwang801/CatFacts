@@ -535,8 +535,6 @@ class ContactDetailVC: UIViewController, CreditItemSelectVCDelegate, UITextField
             if let conversationHistoryVC =  self.storyboard?.instantiateViewControllerWithIdentifier("ConversationHistoryVC") as? ConversationHistoryVC {
                 self.navigationItem.title = "";
                 conversationHistoryVC.theContact = contactData
-//                creditItemSelectVC.activateAfterPurchase = false
-//                creditItemSelectVC.delegate = self
                 self.navigationController?.pushViewController(conversationHistoryVC, animated: true)
             }
         }
