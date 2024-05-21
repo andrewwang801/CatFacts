@@ -34,9 +34,9 @@ class ConversationHistoryVC: JSQMessagesViewController {
     override func collectionView(collectionView: JSQMessagesCollectionView, messageBubbleImageDataForItemAtIndexPath indexPath: NSIndexPath) -> JSQMessageBubbleImageDataSource? {
         let message = messages[indexPath.item]
         if message.senderId == "Contact" {
-            return outgoingBubbleImageView
-        } else {
             return incomingBubbleImageView
+        } else {
+            return outgoingBubbleImageView
         }
     }
     
@@ -44,7 +44,7 @@ class ConversationHistoryVC: JSQMessagesViewController {
         let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath) as! JSQMessagesCollectionViewCell
         let contactName:String = theContact!["name"] as? String ?? ""
         let message = messages[indexPath.item]
-        if message.senderId == "Contact" {
+        if message.senderId == "Server" {
             cell.textView?.textColor = UIColor.whiteColor()
             
             cell.avatarImageView?.image = self.contactImageWithContactInformation("Cat Facts")
@@ -76,11 +76,11 @@ class ConversationHistoryVC: JSQMessagesViewController {
     }
     
     override func senderId() -> String {
-        return "Contact"
+        return "Server"
     }
     
     override func senderDisplayName() -> String {
-        return "Contact"
+        return "Server"
     }
     
     override func collectionView(collectionView: JSQMessagesCollectionView, attributedTextForCellTopLabelAtIndexPath indexPath: NSIndexPath) -> NSAttributedString? {
