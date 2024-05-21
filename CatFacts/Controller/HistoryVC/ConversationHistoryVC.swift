@@ -43,7 +43,6 @@ class ConversationHistoryVC: JSQMessagesViewController {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath) as! JSQMessagesCollectionViewCell
         let contactName:String = theContact!["name"] as? String ?? ""
-        
         let message = messages[indexPath.item]
         if message.senderId == "Server" {
             cell.textView?.textColor = UIColor.blackColor()
@@ -64,6 +63,8 @@ class ConversationHistoryVC: JSQMessagesViewController {
                         cell.avatarImageView?.image = self.contactImageWithContactInformation(contactName)
                     }
                 })
+            } else {
+                cell.avatarImageView?.image = self.contactImageWithContactInformation(contactName)
             }
         }
         
