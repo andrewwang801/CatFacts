@@ -58,6 +58,7 @@
 		969197391CC15594008CE7EA /* PrivacyPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969197381CC15594008CE7EA /* PrivacyPolicyVC.swift */; };
 		96A5E0861CC2529400D8EC1E /* CatFactsPrivacyPolicy.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 96A5E0851CC2529400D8EC1E /* CatFactsPrivacyPolicy.rtf */; };
 		96A5E0891CC2B5EC00D8EC1E /* ContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E0881CC2B5EC00D8EC1E /* ContactDetailVC.swift */; };
+		B2EC46581E7B0B50004AAB80 /* ConversationHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC46571E7B0B50004AAB80 /* ConversationHistoryVC.swift */; };
 		B32E28901CF1D1CE0062C7A1 /* CatFactsTermsOfService.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B32E288F1CF1D1CE0062C7A1 /* CatFactsTermsOfService.rtf */; };
 		B33D97C51CF4786A00E8DB69 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B33D97C41CF4786A00E8DB69 /* DropDownCell.xib */; };
 		B38A58571D1453290011CF1F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38A58551D1453290011CF1F /* Bolts.framework */; };
@@ -161,6 +162,7 @@
 		969197381CC15594008CE7EA /* PrivacyPolicyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyVC.swift; sourceTree = "<group>"; };
 		96A5E0851CC2529400D8EC1E /* CatFactsPrivacyPolicy.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = CatFactsPrivacyPolicy.rtf; sourceTree = "<group>"; };
 		96A5E0881CC2B5EC00D8EC1E /* ContactDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailVC.swift; sourceTree = "<group>"; };
+		B2EC46571E7B0B50004AAB80 /* ConversationHistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationHistoryVC.swift; sourceTree = "<group>"; };
 		B32E288F1CF1D1CE0062C7A1 /* CatFactsTermsOfService.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = CatFactsTermsOfService.rtf; sourceTree = "<group>"; };
 		B33D97C41CF4786A00E8DB69 /* DropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
 		B38A58551D1453290011CF1F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -406,6 +408,7 @@
 		83F74B4F1C31501D0052CA6C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B2EC46561E7B0B38004AAB80 /* HistoryVC */,
 				962DA9921CC098250052E140 /* MenuVC */,
 				83F74B591C3154E60052CA6C /* SignIn */,
 				838442561C326CB600342EE2 /* SignUp */,
@@ -481,6 +484,15 @@
 				96A5E0881CC2B5EC00D8EC1E /* ContactDetailVC.swift */,
 			);
 			name = ContactDetailVC;
+			sourceTree = "<group>";
+		};
+		B2EC46561E7B0B38004AAB80 /* HistoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				B2EC46571E7B0B50004AAB80 /* ConversationHistoryVC.swift */,
+			);
+			name = HistoryVC;
+			path = Controller/HistoryVC;
 			sourceTree = "<group>";
 		};
 		B3FBC2E61CF35AFC009E549F /* DropDown */ = {
@@ -714,6 +726,7 @@
 				83E7F6151C327CF6001D8C89 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				83E7F6241C32C92A001D8C89 /* CFContactCell.swift in Sources */,
 				83E7F6221C32B425001D8C89 /* CFBaseVC.swift in Sources */,
+				B2EC46581E7B0B50004AAB80 /* ConversationHistoryVC.swift in Sources */,
 				83E7F6131C327CF6001D8C89 /* MGSwipeTableCell.m in Sources */,
 				83E7F6111C327CF6001D8C89 /* InsetLabel.m in Sources */,
 				96A5E0891CC2B5EC00D8EC1E /* ContactDetailVC.swift in Sources */,
